@@ -70,11 +70,15 @@ I am a passionate **Full-Stack AI Engineer**, **UI/UX Designer**, and **Gaming C
 
 ---
 
+---
+
 ### 📊 GitHub Stats
 
 <p align="left">
   <img src="https://github-readme-stats.vercel.app/api?username=Sithija-Kalhara&show_icons=true&theme=dark&hide_border=true&bg_color=0D1117&title_color=58A6FF&icon_color=58A6FF&text_color=C9D1D9" alt="Sithija's GitHub Stats" width="480" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Sithija-Kalhara&layout=compact&theme=dark&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9" alt="Top Languages" width="350" />
 </p>
+
 
 ---
 
