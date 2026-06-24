@@ -1,15 +1,15 @@
 name: Refresh Dev Quotes
 on:
   schedule:
-    - cron: "0 0 * * *" # හැමදාම රෑට automatic update වෙන්න
-  workflow_dispatch: # ඕන වෙලාවක manual run කරගන්න
+    - cron: "0 0 * * *"
+  workflow_dispatch: 
 jobs:
   update-readme:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: lowlighter/metrics@latest # නිවැරදිම Marketplace action path එක
+      - uses: lowlighter/metrics@latest 
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           plugin_languages: yes
-          plugin_quotes: yes # Quotes සක්‍රීය කිරීම
+          plugin_quotes: yes 
