@@ -231,23 +231,7 @@ jobs:
 
 <div align="center">
   <img src="https://readme-jokes.vercel.app/api?theme=dark&hideBorder" alt="Dev Joke" width="500" />
-</div>
-
----
-> ✨ **Auto-rotating quotes** — add this GitHub Action to refresh daily:
-
-```yaml
-# .github/workflows/update-readme.yml
-- uses: marketplace/actions/profileme-devquote
-```
-
-Or use this always-live widget:
-
-<div align="center">
-  <img src="https://readme-jokes.vercel.app/api?theme=dark&hideBorder" alt="Dev Joke" width="500" />
-</div>
-
----
+</div> 
 
 ## 🎮 Gaming & Content — Mr. Flexy
 
