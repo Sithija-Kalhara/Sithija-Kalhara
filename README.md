@@ -151,7 +151,17 @@ Other        █░░░░░░░░░░░░░░░░░░░░    
 ## 🏆 GitHub Achievements
 
 <div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Sithija-Kalhara&theme=darkhub&no-frame=true&no-bg=true&margin-w=8&column=6" />
+  <img src="https://github-profile-trophy.vercel.app/?username=SithijaKalhara&theme=darkhub&no-frame=true&no-bg=true&margin-w=8&column=6" alt="GitHub Trophies" />
+</div>
+
+## 💬 Dev Quote of the Day
+
+<div align="center">
+  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark&quote=The%20best%20code%20is%20no%20code%20at%20all&author=Jeff%20Atwood" alt="Dev Quote" width="600"/>
+</div>
+
+<div align="center">
+  <img src="https://readme-jokes.vercel.app/api?theme=dark&hideBorder" alt="Dev Joke" width="500" />
 </div>
 
 ## 💬 Dev Quote of the Day
