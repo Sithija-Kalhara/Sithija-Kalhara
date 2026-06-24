@@ -1,4 +1,4 @@
-<img width="1440" height="3960" alt="image" src="https://github.com/user-attachments/assets/906dcf48-07c4-401d-83f2-b61aa143bd82" /><div align="center">
+<div align="center">
 
 <!-- Animated Header Banner -->
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,30:0d2137,70:1a3a5c,100:58A6FF&height=220&section=header&text=Sithija%20Kalhara&fontSize=56&fontColor=ffffff&fontAlignY=38&desc=Full-Stack%20AI%20Engineer%20%E2%80%A2%20UI%2FUX%20Designer%20%E2%80%A2%20Gaming%20Creator&descAlignY=58&descSize=17&animation=fadeIn" width="100%" />
