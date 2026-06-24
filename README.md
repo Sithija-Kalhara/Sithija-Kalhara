@@ -33,39 +33,6 @@
 
 </div>
 
----
-
-## 🎵 Music Vibes
-
-<div align="center">
-  <!-- Live Spotify Sound Wave Animation -->
-  <a href="https://open.spotify.com">
-    <img src="https://spotify-github-profile.vercel.app/api/view?uid=sithija&theme=novatorem&cover_image=true" alt="Spotify Now Playing" width="400"/>
-  </a>
-</div>
-
-<br/>
-
-<div align="center">
-  <img src="https://img.shields.io/badge/YOUTUBE%20MUSIC-FF0000?style=for-the-badge&logo=youtube-music&logoColor=white" alt="YouTube Music" />
-  <img src="https://img.shields.io/badge/GENRE-LO--FI%20%7C%20SYNTHWAVE%20%7C%20OST-6f42c1?style=for-the-badge" alt="Genre" />
-</div>
-
-```yaml
-🎧 currently_listening_to:
-  mood_1: "Lo-Fi Hip Hop  — late night coding sessions 🌙"
-  mood_2: "Synthwave     — when shipping deadlines hit ⚡"
-  mood_3: "Game OSTs     — for deep focus & flow state 🎮"
-  mood_4: "City Pop      — Oyama nights inspiration 🇯🇵"
-
-🔮 all_time_favorites:
-  - "Nujabes — Feather"
-  - "Perturbator — Dangerous Days"
-  - "Yasunori Mitsuda — Corridors of Time"
-  - "Tatsuro Yamashita — Ride on Time"
-```
-
----
 
 ## 🚀 Featured Projects
 
