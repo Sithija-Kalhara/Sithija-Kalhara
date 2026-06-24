@@ -80,5 +80,5 @@ I am a passionate **Full-Stack AI Engineer**, **UI/UX Designer**, and **Gaming C
 ---
 
 <p align="center">
-  <i>"Code with precision, design with vision."</i>
+  <i>"OneDigital Vision for the Future"</i>
 </p>
