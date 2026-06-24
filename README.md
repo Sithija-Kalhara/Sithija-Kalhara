@@ -233,6 +233,7 @@ jobs:
   <img src="https://readme-jokes.vercel.app/api?theme=dark&hideBorder" alt="Dev Joke" width="500" />
 </div>
 
+---
 > ✨ **Auto-rotating quotes** — add this GitHub Action to refresh daily:
 
 ```yaml
