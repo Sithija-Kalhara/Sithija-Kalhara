@@ -161,23 +161,7 @@ Other        █░░░░░░░░░░░░░░░░░░░░    
 1. Sign up at [wakatime.com](https://wakatime.com) and install the IDE plugin
 2. Get your WakaTime API key from settings
 3. Add `WAKATIME_API_KEY` to your GitHub repo secrets
-4. Create `.github/workflows/waka-readme.yml`:
-
-```yaml
-name: Waka Readme
-on:
-  schedule:
-    - cron: '0 0 * * *'
-  workflow_dispatch:
-jobs:
-  update-readme:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: anmol098/waka-readme-stats@master
-        with:
-          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
-```
+4. Create `.github/workflows/waka-readme.yml`: 
 
 </details>
 
