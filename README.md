@@ -37,9 +37,13 @@
 
 ## 🧠 About Me
 
+<div align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=16&pause=1000&color=58A6FF&center=false&vCenter=false&width=500&height=220&lines=const+sithija+=+{;++location%3A+++++++%22Oyama%2C+Tochigi%2C+Japan+%F0%9F%87%AF%F0%9F%87%B5%22%2C;++role%3A+++++++++++%5B%22Full-Stack+Developer%22%5D%2C;++currentBuild%3A+++%22Eyerone%22%2C;++alterEgo%3A+++++++%22Mr.+Flexy+%F0%9F%8E%AE%22%2C;++philosophy%3A++++%22OneDigital+Vision%22;};" alt="Typing Effect" />
+</div>
+
 ```ts
 const sithija = {
-  location:       "Osaka, Japan 🇯🇵",
+  location:       "Oyama, Tochigi, Japan 🇯🇵",
   role:           ["Full-Stack AI Engineer", "UI/UX Designer", "Gaming Content Creator"],
   currentBuild:   "Eyerone — https://eyerone.com",
   alterEgo:       "Mr. Flexy 🎮",
