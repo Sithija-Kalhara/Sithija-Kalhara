@@ -1,0 +1,14 @@
+
+name: Refresh Dev Quotes
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch: 
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: marketplace/actions/profileme-devquote@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
