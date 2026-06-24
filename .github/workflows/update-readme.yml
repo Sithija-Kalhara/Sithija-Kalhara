@@ -1,14 +1,15 @@
-
 name: Refresh Dev Quotes
 on:
   schedule:
-    - cron: "0 0 * * *"
-  workflow_dispatch: 
+    - cron: "0 0 * * *" # හැමදාම රෑට automatic update වෙන්න
+  workflow_dispatch: # ඕන වෙලාවක manual run කරගන්න
 jobs:
   update-readme:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: marketplace/actions/profileme-devquote@master
+      - uses: lowlighter/metrics@latest # නිවැරදිම Marketplace action path එක
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+          plugin_languages: yes
+          plugin_quotes: yes # Quotes සක්‍රීය කිරීම
