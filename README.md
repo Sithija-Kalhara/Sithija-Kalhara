@@ -37,10 +37,6 @@
 
 ## 🧠 About Me
 
-<div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=16&pause=1000&color=58A6FF&center=false&vCenter=false&width=500&height=220&lines=const+sithija+=+{;++location%3A+++++++%22Oyama%2C+Tochigi%2C+Japan+%F0%9F%87%AF%F0%9F%87%B5%22%2C;++role%3A+++++++++++%5B%22Full-Stack+Developer%22%5D%2C;++currentBuild%3A+++%22Eyerone%22%2C;++alterEgo%3A+++++++%22Mr.+Flexy+%F0%9F%8E%AE%22%2C;++philosophy%3A++++%22OneDigital+Vision%22;};" alt="Typing Effect" />
-</div>
-
 ```ts
 const sithija = {
   location:       "Oyama, Tochigi, Japan 🇯🇵",
@@ -198,14 +194,29 @@ jobs:
 ## 🎵 Music Vibes
 
 <div align="center">
-
-<a href="https://music.youtube.com" target="_blank">
-  <img src="https://img.shields.io/badge/YouTube%20Music-FF0000?style=for-the-badge&logo=youtube-music&logoColor=white" />
-</a>
-&nbsp;
-<img src="https://img.shields.io/badge/Genre-Lo--Fi%20%7C%20Synthwave%20%7C%20OST-58A6FF?style=for-the-badge&logo=musicbrainz&logoColor=white" />
-
+  <!-- Live Spotify / YouTube Music Now Playing Animation Widget -->
+  <img src="https://novatorem-now-playing.vercel.app/api/now-playing?background_color=0d1117&twitter_status=true" alt="Now Playing" width="350" />
 </div>
+
+<br/>
+
+<div align="center">
+  <img src="https://img.shields.io/badge/YOUTUBE%20MUSIC-FF0000?style=for-the-badge&logo=youtube-music&logoColor=white" alt="YouTube Music" />
+  <img src="https://img.shields.io/badge/GENRE-LO--FI%20%7C%20SYNTHWAVE%20%7C%20OST-6f42c1?style=for-the-badge" alt="Genre" />
+</div>
+
+```python
+🎧 currently_listening_to:
+    mood_1: "Lo-Fi Hip Hop  — late night coding sessions 🌙"
+    mood_2: "Synthwave     — when shipping deadlines hit ⚡"
+    mood_3: "Game OSTs     — for deep focus & flow state 🎮"
+    mood_4: "City Pop      — Oyama nights inspiration 🇯🇵"
+
+🔮 all_time_favorites:
+    - "Nujabes — Feather"
+    - "Perturbator — Dangerous Days"
+    - "Yasunori Mitsuda — Corridors of Time"
+    - "Tatsuro Yamashita — Ride on Time"
 
 <br/>
 
