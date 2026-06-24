@@ -280,32 +280,9 @@ Or use this always-live widget:
 <details>
 <summary>🐍 How to enable the contribution snake animation</summary>
 
-Create `.github/workflows/snake.yml` in your profile repo:
+## 🐍 My Contribution Snake
 
-```yaml
-name: Generate Snake Animation
-on:
-  schedule:
-    - cron: "0 0 * * *"
-  workflow_dispatch:
-jobs:
-  generate:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: Platane/snk@v3
-        with:
-          github_user_name: Sithija-Kalhara
-          outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-      - uses: crazy-max/ghaction-github-pages@v3
-        with:
-          target_branch: output
-          build_dir: dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-```
-
+![GitHub Snake Animation](https://raw.githubusercontent.com/Sithija-Kalhara/Sithija-Kalhara/output/github-contribution-grid-snake-dark.svg)
 </details>
 
 <div align="center">
