@@ -227,6 +227,12 @@ jobs:
   <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark&quote=The%20best%20code%20is%20no%20code%20at%20all&author=Jeff%20Atwood" alt="Dev Quote" width="600"/>
 </div>
 
+<br/>
+
+<div align="center">
+  <img src="https://readme-jokes.vercel.app/api?theme=dark&hideBorder" alt="Dev Joke" width="500" />
+</div>
+
 > ✨ **Auto-rotating quotes** — add this GitHub Action to refresh daily:
 
 ```yaml
