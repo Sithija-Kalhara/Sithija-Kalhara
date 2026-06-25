@@ -1,0 +1,16 @@
+name: Latest YouTube Videos
+on:
+  schedule:
+    - cron: '0 */6 * * *'
+  workflow_dispatch: 
+
+jobs:
+  update-readme-with-youtube:
+    name: Update this repo's README with latest videos from YouTube
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: gautamkrishnar/blog-post-workflow@master
+        with:
+          comment_tag_name: "youtube-videos"
+          feed_list: "https://www.youtube.com/feeds/videos.xml?channel_id=UC6zIu94kXl7p4wLym_q2YDw" # Mr. Flexy YouTube Feed URL
