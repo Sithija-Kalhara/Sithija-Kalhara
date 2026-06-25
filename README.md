@@ -191,12 +191,39 @@ jobs:
 
 ---
 
-## 🎬 Latest YouTube Videos — Mr. Flexy
+## 🎵 Music Vibes & Latest Video
 
-<!-- youtube-videos:START -->
-<!-- youtube-videos:END -->
+<div align="center">
+
+[![YouTube](https://img.shields.io/badge/YouTube-Mr.Flexy-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/channel/UCFK9phR6Au3AVhUw95n71fQ)
+&nbsp;
+![Genre](https://img.shields.io/badge/Lo--Fi_%7C_Synthwave_%7C_OST-58A6FF?style=for-the-badge)
+
+</div>
 
 <br/>
+
+### 🎬 Latest Upload
+
+<!-- YOUTUBE-CARD:START -->
+> ⚙️ *Run the GitHub Action once to auto-populate this section with your latest video.*
+<!-- YOUTUBE-CARD:END -->
+
+<br/>
+
+```yaml
+🎧 currently_listening_to:
+  mood_1: "Lo-Fi Hip Hop  — late night coding sessions 🌙"
+  mood_2: "Synthwave      — when shipping deadlines hit ⚡"
+  mood_3: "Game OSTs      — for deep focus & flow state 🎮"
+  mood_4: "City Pop       — Tochigi nights inspiration 🇯🇵"
+
+🎼 all_time_favorites:
+  - "Nujabes — Feather"
+  - "Perturbator — Dangerous Days"
+  - "Yasunori Mitsuda — Corridors of Time"
+  - "Tatsuro Yamashita — Ride on Time"
+```
 
 ---
 
