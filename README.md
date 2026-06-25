@@ -146,13 +146,79 @@ Python       ███████████████░░░░░░  75
 > ⚙️ **Setup required:** Connect your [WakaTime](https://wakatime.com) account and add the GitHub Action below to auto-update this section weekly.
 
 <!--START_SECTION:waka-->
+![Code Time](http://img.shields.io/badge/Code%20Time-0%20secs-blue?style=flat)
+
+![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-49.08%20thousand%20lines%20of%20code-blue?style=flat)
+
+**🐱 My GitHub Data** 
+
+> 📦 241.2 kB Used in GitHub's Storage 
+ > 
+> 🏆 77 Contributions in the Year 2026
+ > 
+> 🚫 Not Opted to Hire
+ > 
+> 📜 11 Public Repositories 
+ > 
+> 🔑 1 Private Repositories 
+ > 
+**I'm an Early 🐤** 
+
 ```text
-TypeScript   ██████████████░░░░░░░   58.4%
-Python       ████░░░░░░░░░░░░░░░░░   16.2%
-JavaScript   ███░░░░░░░░░░░░░░░░░░   12.7%
-CSS/Tailwind ██░░░░░░░░░░░░░░░░░░░    8.1%
-Other        █░░░░░░░░░░░░░░░░░░░░    4.6%
+🌞 Morning                21 commits          ██████░░░░░░░░░░░░░░░░░░░   25.61 % 
+🌆 Daytime                30 commits          █████████░░░░░░░░░░░░░░░░   36.59 % 
+🌃 Evening                22 commits          ███████░░░░░░░░░░░░░░░░░░   26.83 % 
+🌙 Night                  9 commits           ███░░░░░░░░░░░░░░░░░░░░░░   10.98 % 
 ```
+📅 **I'm Most Productive on Thursday** 
+
+```text
+Monday                   13 commits          ████░░░░░░░░░░░░░░░░░░░░░   15.85 % 
+Tuesday                  7 commits           ██░░░░░░░░░░░░░░░░░░░░░░░   08.54 % 
+Wednesday                18 commits          █████░░░░░░░░░░░░░░░░░░░░   21.95 % 
+Thursday                 32 commits          ██████████░░░░░░░░░░░░░░░   39.02 % 
+Friday                   11 commits          ███░░░░░░░░░░░░░░░░░░░░░░   13.41 % 
+Saturday                 0 commits           ░░░░░░░░░░░░░░░░░░░░░░░░░   00.00 % 
+Sunday                   1 commits           ░░░░░░░░░░░░░░░░░░░░░░░░░   01.22 % 
+```
+
+
+📊 **This Week I Spent My Time On** 
+
+```text
+🕑︎ Time Zone: Asia/Tokyo
+
+💬 Programming Languages: 
+No Activity Tracked This Week
+
+🔥 Editors: 
+No Activity Tracked This Week
+
+🐱‍💻 Projects: 
+No Activity Tracked This Week
+
+💻 Operating System: 
+No Activity Tracked This Week
+```
+
+**I Mostly Code in JavaScript** 
+
+```text
+JavaScript               5 repos             ███████████░░░░░░░░░░░░░░   45.45 % 
+TypeScript               2 repos             █████░░░░░░░░░░░░░░░░░░░░   18.18 % 
+CSS                      2 repos             █████░░░░░░░░░░░░░░░░░░░░   18.18 % 
+Python                   1 repo              ██░░░░░░░░░░░░░░░░░░░░░░░   09.09 % 
+HTML                     1 repo              ██░░░░░░░░░░░░░░░░░░░░░░░   09.09 % 
+```
+
+
+
+**Timeline**
+
+![Lines of Code chart](https://raw.githubusercontent.com/Sithija-Kalhara/Sithija-Kalhara/main/assets/bar_graph.png)
+
+
+ Last Updated on 25/06/2026 05:42:14 UTC
 <!--END_SECTION:waka-->
 
 <details>
