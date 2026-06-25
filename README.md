@@ -143,128 +143,34 @@ Python       ███████████████░░░░░░  75
 
 ## 📅 Weekly Dev Breakdown (WakaTime)
 
-> ⚙️ **Setup required:** Connect your [WakaTime](https://wakatime.com) account and add the GitHub Action below to auto-update this section weekly.
-
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-0%20secs-blue?style=flat)
-
-![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-49.08%20thousand%20lines%20of%20code-blue?style=flat)
-
-**🐱 My GitHub Data** 
-
-> 📦 241.2 kB Used in GitHub's Storage 
- > 
-> 🏆 77 Contributions in the Year 2026
- > 
-> 🚫 Not Opted to Hire
- > 
-> 📜 11 Public Repositories 
- > 
-> 🔑 1 Private Repositories 
- > 
-**I'm an Early 🐤** 
-
 ```text
-🌞 Morning                21 commits          ██████░░░░░░░░░░░░░░░░░░░   25.61 % 
-🌆 Daytime                30 commits          █████████░░░░░░░░░░░░░░░░   36.59 % 
-🌃 Evening                22 commits          ███████░░░░░░░░░░░░░░░░░░   26.83 % 
-🌙 Night                  9 commits           ███░░░░░░░░░░░░░░░░░░░░░░   10.98 % 
+TypeScript   ██████████████░░░░░░░   58.4%
+Python       ████░░░░░░░░░░░░░░░░░   16.2%
+JavaScript   ███░░░░░░░░░░░░░░░░░░   12.7%
+CSS/Tailwind ██░░░░░░░░░░░░░░░░░░░    8.1%
+Other        █░░░░░░░░░░░░░░░░░░░░    4.6%
 ```
-📅 **I'm Most Productive on Thursday** 
-
-```text
-Monday                   13 commits          ████░░░░░░░░░░░░░░░░░░░░░   15.85 % 
-Tuesday                  7 commits           ██░░░░░░░░░░░░░░░░░░░░░░░   08.54 % 
-Wednesday                18 commits          █████░░░░░░░░░░░░░░░░░░░░   21.95 % 
-Thursday                 32 commits          ██████████░░░░░░░░░░░░░░░   39.02 % 
-Friday                   11 commits          ███░░░░░░░░░░░░░░░░░░░░░░   13.41 % 
-Saturday                 0 commits           ░░░░░░░░░░░░░░░░░░░░░░░░░   00.00 % 
-Sunday                   1 commits           ░░░░░░░░░░░░░░░░░░░░░░░░░   01.22 % 
-```
-
-
-📊 **This Week I Spent My Time On** 
-
-```text
-🕑︎ Time Zone: Asia/Tokyo
-
-💬 Programming Languages: 
-No Activity Tracked This Week
-
-🔥 Editors: 
-No Activity Tracked This Week
-
-🐱‍💻 Projects: 
-No Activity Tracked This Week
-
-💻 Operating System: 
-No Activity Tracked This Week
-```
-
-**I Mostly Code in JavaScript** 
-
-```text
-JavaScript               5 repos             ███████████░░░░░░░░░░░░░░   45.45 % 
-TypeScript               2 repos             █████░░░░░░░░░░░░░░░░░░░░   18.18 % 
-CSS                      2 repos             █████░░░░░░░░░░░░░░░░░░░░   18.18 % 
-Python                   1 repo              ██░░░░░░░░░░░░░░░░░░░░░░░   09.09 % 
-HTML                     1 repo              ██░░░░░░░░░░░░░░░░░░░░░░░   09.09 % 
-```
-
-
-
-**Timeline**
-
-![Lines of Code chart](https://raw.githubusercontent.com/Sithija-Kalhara/Sithija-Kalhara/main/assets/bar_graph.png)
-
-
- Last Updated on 25/06/2026 05:42:14 UTC
 <!--END_SECTION:waka-->
 
-<details>
-<summary>⚙️ How to enable live WakaTime stats</summary>
+---
 
-1. Sign up at [wakatime.com](https://wakatime.com) and install the IDE plugin
-2. Get your WakaTime API key from settings
-3. Add `WAKATIME_API_KEY` to your GitHub repo secrets
-4. Create `.github/workflows/waka-readme.yml`:
-
-```yaml
-name: Waka Readme
-on:
-  schedule:
-    - cron: '0 0 * * *'
-  workflow_dispatch:
-jobs:
-  update-readme:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: anmol098/waka-readme-stats@master
-        with:
-          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
-```
-
-</details>
-
-
-## 💬 Dev Quote of the Day
+## 🏆 GitHub Achievements
 
 <div align="center">
-  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark&quote=The%20best%20code%20is%20no%20code%20at%20all&author=Jeff%20Atwood" alt="Dev Quote" width="600"/>
+
+<img src="https://github-profile-trophy.vercel.app/?username=Sithija-Kalhara&theme=darkhub&no-frame=true&no-bg=true&margin-w=6&column=4&rank=SECRET,SSS,SS,S,AAA,AA,A,B,C" />
+
 </div>
 
-> ✨ **Auto-rotating quotes** — add this GitHub Action to refresh daily:
-
-```yaml
-# .github/workflows/update-readme.yml
-- uses: marketplace/actions/profileme-devquote
-```
-
-Or use this always-live widget:
-
 <div align="center">
-  <img src="https://readme-jokes.vercel.app/api?theme=dark&hideBorder" alt="Dev Joke" width="500" />
+
+![Commits](https://img.shields.io/github/commit-activity/y/Sithija-Kalhara/Sithija-Kalhara?style=for-the-badge&color=58A6FF&label=Commits+This+Year&logo=github)
+&nbsp;
+![Followers](https://img.shields.io/github/followers/Sithija-Kalhara?style=for-the-badge&color=58A6FF&label=Followers&logo=github)
+&nbsp;
+![Stars](https://img.shields.io/github/stars/Sithija-Kalhara?style=for-the-badge&color=58A6FF&label=Stars&logo=github&affiliations=OWNER)
+
 </div>
 
 ---
@@ -303,7 +209,6 @@ Or use this always-live widget:
 
 ---
 
-<!-- Snake Animation GitHub Action Setup -->
 <details>
 <summary>🐍 How to enable the contribution snake animation</summary>
 
