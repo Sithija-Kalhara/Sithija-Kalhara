@@ -193,8 +193,8 @@ jobs:
 
 ## 🎬 Latest YouTube Videos — Mr. Flexy
 
-<!-- START_SECTION:youtube-videos -->
-<!-- END_SECTION:youtube-videos -->
+<!-- youtube-videos:START -->
+<!-- youtube-videos:END -->
 
 <br/>
 
