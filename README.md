@@ -181,26 +181,6 @@ jobs:
 
 </details>
 
-
----
- 
-## 🏆 GitHub Achievements
- 
-<div align="center">
-<!-- Trophy row — rank=C+ ensures badges show even on newer accounts -->
-<img src="https://github-profile-trophy.vercel.app/?username=Sithija-Kalhara&theme=darkhub&no-frame=true&no-bg=true&margin-w=6&column=4&rank=SECRET,SSS,SS,S,AAA,AA,A,B,C" />
-</div>
-<div align="center">
-![Commits](https://img.shields.io/github/commit-activity/y/Sithija-Kalhara/Sithija-Kalhara?style=for-the-badge&color=58A6FF&label=Commits+This+Year&logo=github)
-&nbsp;
-![Followers](https://img.shields.io/github/followers/Sithija-Kalhara?style=for-the-badge&color=58A6FF&label=Followers&logo=github)
-&nbsp;
-![Stars](https://img.shields.io/github/stars/Sithija-Kalhara?style=for-the-badge&color=58A6FF&label=Stars&logo=github&affiliations=OWNER)
- 
-</div>
----
----
-
 ## 💬 Dev Quote of the Day
 
 <div align="center">
