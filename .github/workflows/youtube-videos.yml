@@ -5,6 +5,9 @@ on:
     - cron: "0 6 * * *"   # Daily at 6AM UTC
   workflow_dispatch:        # Manual trigger also works
 
+permissions:
+  contents: write         # README එක update කරලා push කරන්න මේක අනිවාර්යයි
+
 jobs:
   update-readme:
     runs-on: ubuntu-latest
@@ -23,8 +26,8 @@ jobs:
 
       - name: Fetch latest YouTube video & update README
         env:
-          YT_API_KEY: ${{ secrets.YT_API_KEY }}
-          CHANNEL_ID: "UCFK9phR6Au3AVhUw95n71fQ"
+          YT_API_KEY: ${{ secrets.YT_API_KEY }}  
+          CHANNEL_ID: "UCFK9phR6Au3AVhUw95n71fQW" 
         run: |
           python3 - <<'EOF'
           import requests, re, os
@@ -32,7 +35,6 @@ jobs:
           api_key    = os.environ["YT_API_KEY"]
           channel_id = os.environ["CHANNEL_ID"]
 
-          # Get latest video from channel
           url = (
               "https://www.googleapis.com/youtube/v3/search"
               f"?key={api_key}&channelId={channel_id}"
@@ -40,19 +42,25 @@ jobs:
           )
           data = requests.get(url).json()
 
+          if "items" not in data or not data["items"]:
+              print("❌ No videos found or API quota exceeded!")
+              exit(1)
+
           item     = data["items"][0]
           video_id = item["id"]["videoId"]
           title    = item["snippet"]["title"]
-          date     = item["snippet"]["publishedAt"][:10]   # YYYY-MM-DD
-          thumb    = f"https://img.youtube.com/vi/{video_id}/maxresdefault.jpg"
+          date     = item["snippet"]["publishedAt"][:10]   
           link     = f"https://www.youtube.com/watch?v={video_id}"
 
+          # Live Streams සදහා hqdefault එක වඩාත් විශ්වාසදායකයි
+          thumb    = f"https://img.youtube.com/vi/{video_id}/hqdefault.jpg"
+
           # Build the card markdown
-          card = f"""<!-- YOUTUBE-CARD:START -->
-          <div align="center">
+          card = f"""<div align="center">
             <a href="{link}" target="_blank">
               <img src="{thumb}" alt="{title}" width="480" style="border-radius:12px;" />
             </a>
+            <br/>
             <br/>
             <a href="{link}" target="_blank">
               <img src="https://img.shields.io/badge/▶ Watch Now-{requests.utils.quote(title[:40])}-FF0000?style=for-the-badge&logo=youtube&logoColor=white" />
@@ -60,14 +68,13 @@ jobs:
             <br/>
             <sub>📅 Published: {date}</sub>
           </div>
-          <!-- YOUTUBE-CARD:END -->"""
+          """
 
-          # Replace section in README
           with open("README.md", "r", encoding="utf-8") as f:
               content = f.read()
 
           new_content = re.sub(
-              r"<!-- YOUTUBE-CARD:START -->.*?<!-- YOUTUBE-CARD:END -->",
+              r".*?",
               card,
               content,
               flags=re.DOTALL,
