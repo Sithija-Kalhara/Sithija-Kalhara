@@ -33,6 +33,25 @@
 
 </div>
 
+---
+
+## 🧠 About Me
+
+```ts
+const sithija = {
+  location:       "Oyama, Tochigi, Japan 🇯🇵",
+  role:           ["Full-Stack AI Engineer", "UI/UX Designer", "Gaming Content Creator"],
+  currentBuild:   "Eyerone — https://eyerone.com",
+  alterEgo:       "Mr. Flexy 🎮",
+  focus:          ["MERN Stack", "Next.js", "AI Integration", "Edge Computing"],
+  infrastructure: ["Cloudflare Workers", "Cloudflare R2", "Serverless"],
+  philosophy:     "OneDigital Vision for the Future",
+  openTo:         ["Collaborations", "Freelance", "AI Projects"],
+  funFact:        "I debug with music on 🎵 and ship at midnight 🌙",
+};
+```
+
+---
 
 ## 🚀 Featured Projects
 
@@ -142,9 +161,42 @@ Other        █░░░░░░░░░░░░░░░░░░░░    
 1. Sign up at [wakatime.com](https://wakatime.com) and install the IDE plugin
 2. Get your WakaTime API key from settings
 3. Add `WAKATIME_API_KEY` to your GitHub repo secrets
-4. Create `.github/workflows/waka-readme.yml`: 
+4. Create `.github/workflows/waka-readme.yml`:
+
+```yaml
+name: Waka Readme
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: anmol098/waka-readme-stats@master
+        with:
+          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+```
 
 </details>
+
+---
+
+## 🏆 GitHub Achievements
+
+<div align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=Sithija-Kalhara&theme=darkhub&no-frame=true&no-bg=true&margin-w=8&column=6" />
+</div>
+
+---
+
+## 🎬 Latest YouTube Videos — Mr. Flexy
+
+<!-- START_SECTION:youtube-videos -->
+<!-- END_SECTION:youtube-videos -->
+
+<br/>
 
 ---
 
@@ -154,11 +206,20 @@ Other        █░░░░░░░░░░░░░░░░░░░░    
   <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark&quote=The%20best%20code%20is%20no%20code%20at%20all&author=Jeff%20Atwood" alt="Dev Quote" width="600"/>
 </div>
 
-<br/>
+> ✨ **Auto-rotating quotes** — add this GitHub Action to refresh daily:
+
+```yaml
+# .github/workflows/update-readme.yml
+- uses: marketplace/actions/profileme-devquote
+```
+
+Or use this always-live widget:
 
 <div align="center">
   <img src="https://readme-jokes.vercel.app/api?theme=dark&hideBorder" alt="Dev Joke" width="500" />
-</div> 
+</div>
+
+---
 
 ## 🎮 Gaming & Content — Mr. Flexy
 
@@ -198,9 +259,32 @@ Other        █░░░░░░░░░░░░░░░░░░░░    
 <details>
 <summary>🐍 How to enable the contribution snake animation</summary>
 
-## 🐍 My Contribution Snake
+Create `.github/workflows/snake.yml` in your profile repo:
 
-![GitHub Snake Animation](https://raw.githubusercontent.com/Sithija-Kalhara/Sithija-Kalhara/output/github-contribution-grid-snake-dark.svg)
+```yaml
+name: Generate Snake Animation
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: Platane/snk@v3
+        with:
+          github_user_name: Sithija-Kalhara
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+      - uses: crazy-max/ghaction-github-pages@v3
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+```
+
 </details>
 
 <div align="center">
