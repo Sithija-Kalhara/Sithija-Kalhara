@@ -1,19 +1,88 @@
-name: Latest YouTube Videos
+name: Update YouTube Latest Video
+
 on:
   schedule:
-    - cron: '0 */6 * * *'
-  workflow_dispatch:
-
-permissions:
-  contents: write
+    - cron: "0 6 * * *"   # Daily at 6AM UTC
+  workflow_dispatch:        # Manual trigger also works
 
 jobs:
-  update-readme-with-youtube:
-    name: Update this repo's README with latest videos from YouTube
+  update-readme:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v4
-      - uses: gautamkrishnar/blog-post-workflow@master
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
-          comment_tag_name: "youtube-videos"
-          feed_list: "https://www.youtube.com/feeds/videos.xml?channel_id=UCFK9phR6Au3AVhUw95n71fQW"
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Fetch latest YouTube video & update README
+        env:
+          YT_API_KEY: ${{ secrets.YT_API_KE }}
+          CHANNEL_ID: "UCFK9phR6Au3AVhUw95n71fQ"
+        run: |
+          python3 - <<'EOF'
+          import requests, re, os
+
+          api_key    = os.environ["YT_API_KEY"]
+          channel_id = os.environ["CHANNEL_ID"]
+
+          # Get latest video from channel
+          url = (
+              "https://www.googleapis.com/youtube/v3/search"
+              f"?key={api_key}&channelId={channel_id}"
+              "&part=snippet&order=date&maxResults=1&type=video"
+          )
+          data = requests.get(url).json()
+
+          item     = data["items"][0]
+          video_id = item["id"]["videoId"]
+          title    = item["snippet"]["title"]
+          date     = item["snippet"]["publishedAt"][:10]   # YYYY-MM-DD
+          thumb    = f"https://img.youtube.com/vi/{video_id}/maxresdefault.jpg"
+          link     = f"https://www.youtube.com/watch?v={video_id}"
+
+          # Build the card markdown
+          card = f"""<!-- YOUTUBE-CARD:START -->
+          <div align="center">
+            <a href="{link}" target="_blank">
+              <img src="{thumb}" alt="{title}" width="480" style="border-radius:12px;" />
+            </a>
+            <br/>
+            <a href="{link}" target="_blank">
+              <img src="https://img.shields.io/badge/▶ Watch Now-{requests.utils.quote(title[:40])}-FF0000?style=for-the-badge&logo=youtube&logoColor=white" />
+            </a>
+            <br/>
+            <sub>📅 Published: {date}</sub>
+          </div>
+          <!-- YOUTUBE-CARD:END -->"""
+
+          # Replace section in README
+          with open("README.md", "r", encoding="utf-8") as f:
+              content = f.read()
+
+          new_content = re.sub(
+              r"<!-- YOUTUBE-CARD:START -->.*?<!-- YOUTUBE-CARD:END -->",
+              card,
+              content,
+              flags=re.DOTALL,
+          )
+
+          with open("README.md", "w", encoding="utf-8") as f:
+              f.write(new_content)
+
+          print(f"✅ Updated README with: {title}")
+          EOF
+
+      - name: Commit & push changes
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git diff --staged --quiet || git commit -m "🎬 chore: update latest YouTube video"
+          git push
