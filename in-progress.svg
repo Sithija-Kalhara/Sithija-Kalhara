@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="115" height="22">
+  <rect width="115" height="22" rx="4" fill="#2a1a00"/>
+  <circle cx="11" cy="11" r="5" fill="#FFA657">
+    <animate attributeName="opacity" values="1;0.2;1" dur="1.4s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="5;6.5;5" dur="1.4s" repeatCount="indefinite"/>
+  </circle>
+  <text x="21" y="15.5" font-family="DejaVu Sans,sans-serif" font-size="11" font-weight="bold" fill="#FFA657">● In Progress</text>
+</svg>
