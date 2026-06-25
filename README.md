@@ -59,8 +59,8 @@ const sithija = {
 
 | Project | Description | Stack | Status |
 |--------|-------------|-------|--------|
-| 🔭 **[Eyerone](https://eyerone.com)** | Crafting a unique digital vision platform | Next.js · AI · Cloudflare | 🟢 Active |
-| 🎮 **Mr. Flexy** | Cinematic gaming content & streaming brand | OBS · After Effects | 🟢 Live |
+| 🔭 **[Eyerone](https://eyerone.com)** | Crafting a unique digital vision platform | Next.js · AI · Cloudflare | ![Active](https://raw.githubusercontent.com/Sithija-Kalhara/Sithija-Kalhara/main/active.svg) |
+| 🎮 **Mr. Flexy** | Cinematic gaming content & streaming brand | OBS · After Effects | ![Live](https://raw.githubusercontent.com/Sithija-Kalhara/Sithija-Kalhara/main/live.svg) |
 | 🤖 *AI Toolbox* | Open source AI-powered developer utilities | Python · TypeScript · Claude API | 🔵 Planning |
 | 🛸 *Edge CMS* | Serverless headless CMS on Cloudflare Workers | Hono · R2 · D1 | 🟡 In Progress |
 
@@ -180,6 +180,7 @@ jobs:
 ```
 
 </details>
+
 
 ## 💬 Dev Quote of the Day
 
