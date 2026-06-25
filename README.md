@@ -190,36 +190,6 @@ jobs:
 </div>
 
 ---
-
-## 🎵 Latest Video
-
-<div align="center">
-
-[![YouTube](https://img.shields.io/badge/YouTube-Mr.Flexy-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/channel/UCFK9phR6Au3AVhUw95n71fQ)
-&nbsp;
-
-</div>
-
-<br/>
-
-### 🎬 Latest Upload
-
-<!-- YOUTUBE-CARD:START -->
-<div align="center">
-  <a href="https://www.youtube.com/watch?v=QvxAFFnbppA" target="_blank">
-    <img src="https://img.youtube.com/vi/QvxAFFnbppA/maxresdefault.jpg" alt="Road to Mythic Rank! Farlight 84 | Mr.Flexy" width="480" style="border-radius:12px;" />
-  </a>
-  <br/>
-  <a href="https://www.youtube.com/watch?v=QvxAFFnbppA" target="_blank">
-    <img src="https://img.shields.io/badge/▶ Watch Now-Road%20to%20Mythic%20Rank%21%20Farlight%2084%20%7C%20Mr.Fl-FF0000?style=for-the-badge&logo=youtube&logoColor=white" />
-  </a>
-  <br/>
-  <sub>📅 Published: 2026-02-03</sub>
-</div>
-<!-- YOUTUBE-CARD:END -->
-
-<br/>
-
 ---
 
 ## 💬 Dev Quote of the Day
