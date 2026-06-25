@@ -159,17 +159,13 @@ Other        █░░░░░░░░░░░░░░░░░░░░    
 
 <div align="center">
 
-<img src="https://github-profile-trophy.vercel.app/?username=Sithija-Kalhara&theme=darkhub&no-frame=true&no-bg=true&margin-w=6&column=4&rank=SECRET,SSS,SS,S,AAA,AA,A,B,C" />
-
-</div>
-
-<div align="center">
-
 ![Commits](https://img.shields.io/github/commit-activity/y/Sithija-Kalhara/Sithija-Kalhara?style=for-the-badge&color=58A6FF&label=Commits+This+Year&logo=github)
 &nbsp;
 ![Followers](https://img.shields.io/github/followers/Sithija-Kalhara?style=for-the-badge&color=58A6FF&label=Followers&logo=github)
 &nbsp;
 ![Stars](https://img.shields.io/github/stars/Sithija-Kalhara?style=for-the-badge&color=58A6FF&label=Stars&logo=github&affiliations=OWNER)
+&nbsp;
+![Repos](https://img.shields.io/badge/dynamic/json?url=https://api.github.com/users/Sithija-Kalhara&query=$.public_repos&style=for-the-badge&color=58A6FF&label=Public+Repos&logo=github)
 
 </div>
 
