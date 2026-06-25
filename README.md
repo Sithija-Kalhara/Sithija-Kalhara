@@ -206,7 +206,17 @@ jobs:
 ### 🎬 Latest Upload
 
 <!-- YOUTUBE-CARD:START -->
-> ⚙️ *Run the GitHub Action once to auto-populate this section with your latest video.*
+<div align="center">
+  <a href="https://www.youtube.com/watch?v=QvxAFFnbppA" target="_blank">
+    <img src="https://img.youtube.com/vi/QvxAFFnbppA/maxresdefault.jpg" alt="Road to Mythic Rank! Farlight 84 | Mr.Flexy" width="480" style="border-radius:12px;" />
+  </a>
+  <br/>
+  <a href="https://www.youtube.com/watch?v=QvxAFFnbppA" target="_blank">
+    <img src="https://img.shields.io/badge/▶ Watch Now-Road%20to%20Mythic%20Rank%21%20Farlight%2084%20%7C%20Mr.Fl-FF0000?style=for-the-badge&logo=youtube&logoColor=white" />
+  </a>
+  <br/>
+  <sub>📅 Published: 2026-02-03</sub>
+</div>
 <!-- YOUTUBE-CARD:END -->
 
 <br/>
