@@ -23,7 +23,7 @@ jobs:
 
       - name: Fetch latest YouTube video & update README
         env:
-          YT_API_KEY: ${{ secrets.YT_API_KE }}
+          YT_API_KEY: ${{ secrets.YT_API_KEY }}
           CHANNEL_ID: "UCFK9phR6Au3AVhUw95n71fQ"
         run: |
           python3 - <<'EOF'
