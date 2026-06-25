@@ -3,10 +3,10 @@ name: Update YouTube Latest Video
 on:
   schedule:
     - cron: "0 6 * * *"   # Daily at 6AM UTC
-  workflow_dispatch:        # Manual trigger also works
+  workflow_dispatch:        # Manual trigger
 
 permissions:
-  contents: write         # README එක update කරලා push කරන්න මේක අනිවාර්යයි
+  contents: write         # README එක update කරලා push කරන්න
 
 jobs:
   update-readme:
@@ -24,38 +24,50 @@ jobs:
       - name: Install dependencies
         run: pip install requests
 
-      - name: Fetch latest YouTube video & update README
-        env:
-          YT_API_KEY: ${{ secrets.YT_API_KEY }}  
-          CHANNEL_ID: "UCFK9phR6Au3AVhUw95n71fQW" 
+      - name: Fetch latest video without API Key
         run: |
           python3 - <<'EOF'
-          import requests, re, os
+          import requests
+          import xml.etree.ElementTree as ET
+          import re
 
-          api_key    = os.environ["YT_API_KEY"]
-          channel_id = os.environ["CHANNEL_ID"]
+          # Mr. Flexy Channel ID
+          channel_id = "UCFK9phR6Au3AVhUw95n71fQW"
+          feed_url = f"https://www.youtube.com/feeds/videos.xml?channel_id={channel_id}"
 
-          url = (
-              "https://www.googleapis.com/youtube/v3/search"
-              f"?key={api_key}&channelId={channel_id}"
-              "&part=snippet&order=date&maxResults=1&type=video"
-          )
-          data = requests.get(url).json()
-
-          if "items" not in data or not data["items"]:
-              print("❌ No videos found or API quota exceeded!")
+          response = requests.get(feed_url)
+          if response.status_code != 200:
+              print(f"❌ Cannot fetch RSS Feed! Status code: {response.status_code}")
               exit(1)
 
-          item     = data["items"][0]
-          video_id = item["id"]["videoId"]
-          title    = item["snippet"]["title"]
-          date     = item["snippet"]["publishedAt"][:10]   
-          link     = f"https://www.youtube.com/watch?v={video_id}"
+          root = ET.fromstring(response.content)
+          
+          # XML Namespaces
+          namespaces = {
+              'atom': 'http://www.w3.org/2005/Atom',
+              'yt': 'http://www.youtube.com/xml/schemas/2015',
+              'media': 'http://search.yahoo.com/mrss/'
+          }
 
-          # Live Streams සදහා hqdefault එක වඩාත් විශ්වාසදායකයි
-          thumb    = f"https://img.youtube.com/vi/{video_id}/hqdefault.jpg"
+          # Get the first entry (Latest Video)
+          entry = root.find('atom:entry', namespaces)
+          if entry is None:
+              print("❌ No videos found in the feed!")
+              exit(1)
 
-          # Build the card markdown
+          video_id = entry.find('yt:videoId', namespaces).text
+          title = entry.find('atom:title', namespaces).text
+          date = entry.find('atom:published', namespaces).text[:10]
+          link = f"https://www.youtube.com/watch?v={video_id}"
+          
+          # Thumbnail Link
+          thumb = f"https://img.youtube.com/vi/{video_id}/hqdefault.jpg"
+
+          # URL Encode title for shields.io badge
+          clean_title = re.sub(r'[^a-zA-Z0-9 ]', '', title)[:30]
+          badge_title = clean_title.replace(' ', '%20')
+
+          # Build Card Markdown
           card = f"""<div align="center">
             <a href="{link}" target="_blank">
               <img src="{thumb}" alt="{title}" width="480" style="border-radius:12px;" />
@@ -63,13 +75,14 @@ jobs:
             <br/>
             <br/>
             <a href="{link}" target="_blank">
-              <img src="https://img.shields.io/badge/▶ Watch Now-{requests.utils.quote(title[:40])}-FF0000?style=for-the-badge&logo=youtube&logoColor=white" />
+              <img src="https://img.shields.io/badge/▶ Watch Now-{badge_title}-FF0000?style=for-the-badge&logo=youtube&logoColor=white" />
             </a>
             <br/>
             <sub>📅 Published: {date}</sub>
           </div>
           """
 
+          # Read and Update README
           with open("README.md", "r", encoding="utf-8") as f:
               content = f.read()
 
@@ -83,7 +96,7 @@ jobs:
           with open("README.md", "w", encoding="utf-8") as f:
               f.write(new_content)
 
-          print(f"✅ Updated README with: {title}")
+          print(f"✅ README successfully updated with video: {title}")
           EOF
 
       - name: Commit & push changes
