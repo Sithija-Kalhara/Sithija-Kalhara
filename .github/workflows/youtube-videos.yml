@@ -1,4 +1,3 @@
-```yaml
 name: Latest YouTube Videos
 on:
   schedule:
