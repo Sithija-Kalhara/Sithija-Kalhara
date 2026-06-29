@@ -279,37 +279,6 @@ Python                   1 repo              ██░░░░░░░░░�
 
 ---
 
-<details>
-<summary>🐍 How to enable the contribution snake animation</summary>
-
-Create `.github/workflows/snake.yml` in your profile repo:
-
-```yaml
-name: Generate Snake Animation
-on:
-  schedule:
-    - cron: "0 0 * * *"
-  workflow_dispatch:
-jobs:
-  generate:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: Platane/snk@v3
-        with:
-          github_user_name: Sithija-Kalhara
-          outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-      - uses: crazy-max/ghaction-github-pages@v3
-        with:
-          target_branch: output
-          build_dir: dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-```
-
-</details>
-
 <div align="center">
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:58A6FF,50:1a3a5c,100:0D1117&height=140&section=footer&text=OneDigital%20Vision%20for%20the%20Future&fontSize=18&fontColor=ffffff&fontAlignY=65&animation=fadeIn" width="100%" />
