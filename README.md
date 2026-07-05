@@ -150,7 +150,7 @@ Python       ███████████████░░░░░░  75
 
 **🐱 My GitHub Data** 
 
-> 📦 221.4 kB Used in GitHub's Storage 
+> 📦 221.6 kB Used in GitHub's Storage 
  > 
 > 🏆 100 Contributions in the Year 2026
  > 
@@ -224,7 +224,7 @@ Jupyter Notebook         1 repo              ██░░░░░░░░░�
 ![Lines of Code chart](https://raw.githubusercontent.com/Sithija-Kalhara/Sithija-Kalhara/main/assets/bar_graph.png)
 
 
- Last Updated on 04/07/2026 01:54:43 UTC
+ Last Updated on 05/07/2026 02:02:06 UTC
 <!--END_SECTION:waka-->
 
 ---
