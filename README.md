@@ -62,7 +62,7 @@ const sithija = {
 | Project | Description | Stack | Status |
 |--------|-------------|-------|--------|
 | 🔭 **[Eyerone](https://eyerone.com)** | Crafting a unique digital vision platform | Next.js · AI · Cloudflare | ![Active](https://raw.githubusercontent.com/Sithija-Kalhara/Sithija-Kalhara/main/active.svg) |
-| 🎮 **Mr. Flexy** | Cinematic gaming content & streaming brand | OBS · After Effects | ![Live](https://raw.githubusercontent.com/Sithija-Kalhara/Sithija-Kalhara/main/live.svg) |
+| 🎮 **[Mr. Flexy](https://www.youtube.com/@mrflexy1)** | Cinematic gaming content & streaming brand | OBS · After Effects | ![Live](https://raw.githubusercontent.com/Sithija-Kalhara/Sithija-Kalhara/main/live.svg) |
 | 🤖 *AI Toolbox* | Open source AI-powered developer utilities | Python · TypeScript · Claude API | ![Planning](https://raw.githubusercontent.com/Sithija-Kalhara/Sithija-Kalhara/main/planning.svg) |
 | 🛸 *Edge CMS* | Serverless headless CMS on Cloudflare Workers | Hono · R2 · D1 | ![In Progress](https://raw.githubusercontent.com/Sithija-Kalhara/Sithija-Kalhara/main/in-progress.svg) |
 
