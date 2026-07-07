@@ -103,7 +103,7 @@ const sithija = {
 <div align="center">
 
 ![Next.js](https://img.shields.io/badge/Next.js-95%25-58A6FF?style=flat-square&labelColor=0D1117)
-![React](https://img.shields.io/badge/React-92%25-61DAFB?style=flat-square&labelColor=0D1117)
+![React](https://img.shields.io/badge/React-95%25-61DAFB?style=flat-square&labelColor=0D1117)
 ![TypeScript](https://img.shields.io/badge/TypeScript-88%25-007ACC?style=flat-square&labelColor=0D1117)
 ![Node.js](https://img.shields.io/badge/Node.js-85%25-339933?style=flat-square&labelColor=0D1117)
 ![AI%2FML](https://img.shields.io/badge/AI%2FML-80%25-CC785C?style=flat-square&labelColor=0D1117)
