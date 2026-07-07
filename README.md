@@ -1,4 +1,4 @@
-# Sithija Kalhara
+#Sithija Kalhara
 
 <div align="center">
 
@@ -127,11 +127,6 @@ Python       ███████████████░░░░░░  75
 ---
 
 ## 📊 GitHub Stats
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Sithija-Kalhara&show_icons=true&theme=dark&hide_border=true&bg_color=0D1117&title_color=58A6FF&icon_color=58A6FF&text_color=C9D1D9&rank_icon=github" height="180" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Sithija-Kalhara&layout=compact&theme=dark&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9" height="180" />
-</div>
 
 <div align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com?user=Sithija-Kalhara&theme=dark&hide_border=true&background=0D1117&stroke=58A6FF&ring=58A6FF&fire=FF6B6B&currStreakLabel=58A6FF" height="180" />
