@@ -1,4 +1,4 @@
-#Sithija Kalhara
+# Sithija Kalhara
 
 <div align="center">
 
@@ -13,14 +13,17 @@
 <br/>
 
 <!-- Badges Row -->
-<a href="https://sithijakalhara.com" target="_blank">
+<a href="https://www.sithijakalhara.com" target="_blank">
   <img src="https://img.shields.io/badge/Portfolio-sithijakalhara.com-000000?style=for-the-badge&logo=google-chrome&logoColor=58A6FF" />
 </a>
-<a href="https://www.linkedin.com" target="_blank">
-  <img src="https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
+<a href="https://www.linkedin.com/in/sithija-kalhara/" target="_blank">
+  <img src="https://img.shields.io/badge/LinkedIn-Sithija%20Kalhara-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
 </a>
 <a href="https://eyerone.com" target="_blank">
   <img src="https://img.shields.io/badge/Eyerone-Live%20Project-58A6FF?style=for-the-badge&logo=vercel&logoColor=white" />
+</a>
+<a href="https://www.youtube.com/@mrflexy1" target="_blank">
+  <img src="https://img.shields.io/badge/YouTube-Mr.%20Flexy-FF0000?style=for-the-badge&logo=youtube&logoColor=white" />
 </a>
 <img src="https://komarev.com/ghpvc/?username=Sithija-Kalhara&style=for-the-badge&color=58A6FF&label=PROFILE+VIEWS" />
 
@@ -40,11 +43,14 @@
 ## 🧠 About Me
 
 ```ts
-const sithija = {
+const sithijaKalhara = {
+  name:           "Sithija Kalhara",
   location:       "Oyama, Tochigi, Japan 🇯🇵",
+  origin:         "Sri Lanka 🇱🇰",
   role:           ["Full-Stack AI Engineer", "UI/UX Designer", "Gaming Content Creator"],
   currentBuild:   "Eyerone — https://eyerone.com",
-  alterEgo:       "Mr. Flexy 🎮",
+  portfolio:      "https://www.sithijakalhara.com",
+  alterEgo:       "Mr. Flexy 🎮 — https://www.youtube.com/@mrflexy1",
   focus:          ["MERN Stack", "Next.js", "AI Integration", "Edge Computing"],
   infrastructure: ["Cloudflare Workers", "Cloudflare R2", "Serverless"],
   philosophy:     "OneDigital Vision for the Future",
@@ -62,6 +68,7 @@ const sithija = {
 | Project | Description | Stack | Status |
 |--------|-------------|-------|--------|
 | 🔭 **[Eyerone](https://eyerone.com)** | Crafting a unique digital vision platform | Next.js · AI · Cloudflare | ![Active](https://raw.githubusercontent.com/Sithija-Kalhara/Sithija-Kalhara/main/active.svg) |
+| 🌐 **[Portfolio](https://www.sithijakalhara.com)** | Personal portfolio — sithijakalhara.com | Next.js · R3F · Framer Motion | ![Live](https://raw.githubusercontent.com/Sithija-Kalhara/Sithija-Kalhara/main/live.svg) |
 | 🎮 **[Mr. Flexy](https://www.youtube.com/@mrflexy1)** | Cinematic gaming content & streaming brand | OBS · After Effects | ![Live](https://raw.githubusercontent.com/Sithija-Kalhara/Sithija-Kalhara/main/live.svg) |
 | 🤖 *AI Toolbox* | Open source AI-powered developer utilities | Python · TypeScript · Claude API | ![Planning](https://raw.githubusercontent.com/Sithija-Kalhara/Sithija-Kalhara/main/planning.svg) |
 | 🛸 *Edge CMS* | Serverless headless CMS on Cloudflare Workers | Hono · R2 · D1 | ![In Progress](https://raw.githubusercontent.com/Sithija-Kalhara/Sithija-Kalhara/main/in-progress.svg) |
@@ -79,6 +86,7 @@ const sithija = {
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Three.js](https://img.shields.io/badge/Three.js-000000?style=for-the-badge&logo=threedotjs&logoColor=white)
 ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
 
 ### 🔧 Backend & Database
@@ -141,84 +149,6 @@ Python       ███████████████░░░░░░  75
 ## 📅 Weekly Dev Breakdown (WakaTime)
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-4%20hrs%2058%20mins-blue?style=flat)
-
-![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-50.47%20thousand%20lines%20of%20code-blue?style=flat)
-
-**🐱 My GitHub Data** 
-
-> 📦 220.7 kB Used in GitHub's Storage 
- > 
-> 🏆 108 Contributions in the Year 2026
- > 
-> 🚫 Not Opted to Hire
- > 
-> 📜 12 Public Repositories 
- > 
-> 🔑 2 Private Repositories 
- > 
-**I'm an Early 🐤** 
-
-```text
-🌞 Morning                21 commits          █████░░░░░░░░░░░░░░░░░░░░   19.44 % 
-🌆 Daytime                54 commits          ████████████░░░░░░░░░░░░░   50.00 % 
-🌃 Evening                23 commits          █████░░░░░░░░░░░░░░░░░░░░   21.30 % 
-🌙 Night                  10 commits          ██░░░░░░░░░░░░░░░░░░░░░░░   09.26 % 
-```
-📅 **I'm Most Productive on Thursday** 
-
-```text
-Monday                   14 commits          ███░░░░░░░░░░░░░░░░░░░░░░   12.96 % 
-Tuesday                  11 commits          ███░░░░░░░░░░░░░░░░░░░░░░   10.19 % 
-Wednesday                18 commits          ████░░░░░░░░░░░░░░░░░░░░░   16.67 % 
-Thursday                 49 commits          ███████████░░░░░░░░░░░░░░   45.37 % 
-Friday                   15 commits          ███░░░░░░░░░░░░░░░░░░░░░░   13.89 % 
-Saturday                 0 commits           ░░░░░░░░░░░░░░░░░░░░░░░░░   00.00 % 
-Sunday                   1 commits           ░░░░░░░░░░░░░░░░░░░░░░░░░   00.93 % 
-```
-
-
-📊 **This Week I Spent My Time On** 
-
-```text
-🕑︎ Time Zone: Asia/Tokyo
-
-💬 Programming Languages: 
-JavaScript               1 hr 17 mins        ███████████████░░░░░░░░░░   58.16 % 
-CSS                      45 mins             █████████░░░░░░░░░░░░░░░░   34.40 % 
-TypeScript               6 mins              █░░░░░░░░░░░░░░░░░░░░░░░░   04.94 % 
-Bash                     3 mins              █░░░░░░░░░░░░░░░░░░░░░░░░   02.27 % 
-SQL                      0 secs              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.23 % 
-
-🔥 Editors: 
-VS Code                  2 hrs 12 mins       █████████████████████████   100.00 % 
-
-🐱‍💻 Projects: 
-eyerone                  2 hrs 6 mins        ████████████████████████░   95.06 % 
-portfolio                6 mins              █░░░░░░░░░░░░░░░░░░░░░░░░   04.94 % 
-
-💻 Operating System: 
-Windows                  2 hrs 12 mins       █████████████████████████   100.00 % 
-```
-
-**I Mostly Code in JavaScript** 
-
-```text
-JavaScript               5 repos             ██████████░░░░░░░░░░░░░░░   38.46 % 
-HTML                     2 repos             ████░░░░░░░░░░░░░░░░░░░░░   15.38 % 
-TypeScript               2 repos             ████░░░░░░░░░░░░░░░░░░░░░   15.38 % 
-CSS                      2 repos             ████░░░░░░░░░░░░░░░░░░░░░   15.38 % 
-Jupyter Notebook         1 repo              ██░░░░░░░░░░░░░░░░░░░░░░░   07.69 % 
-```
-
-
-
-**Timeline**
-
-![Lines of Code chart](https://raw.githubusercontent.com/Sithija-Kalhara/Sithija-Kalhara/main/assets/bar_graph.png)
-
-
- Last Updated on 10/07/2026 01:53:32 UTC
 <!--END_SECTION:waka-->
 
 ---
@@ -252,8 +182,12 @@ Jupyter Notebook         1 repo              ██░░░░░░░░░�
   ╚═╝     ╚═╝╚═╝  ╚═╝    ╚═╝     ╚══════╝╚══════╝╚═╝  ╚═╝   ╚═╝
 ```
 
-> *Cinematic gaming content & live streams — where code meets culture.*  
+> *Sithija Kalhara | Cinematic gaming content & live streams — where code meets culture.*
 > Blending technical storytelling with creative direction. 🎬🕹️
+
+[![YouTube](https://img.shields.io/badge/YouTube-@mrflexy1-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@mrflexy1)
+[![TikTok](https://img.shields.io/badge/TikTok-@mr._.flexy-000000?style=for-the-badge&logo=tiktok&logoColor=white)](https://www.tiktok.com/@mr._.flexy)
+[![Facebook](https://img.shields.io/badge/Facebook-mrflexy2-1877F2?style=for-the-badge&logo=facebook&logoColor=white)](https://www.facebook.com/mrflexy2/)
 
 </div>
 
@@ -265,9 +199,11 @@ Jupyter Notebook         1 repo              ██░░░░░░░░░�
 
 | Channel | Link |
 |--------|------|
-| 🌐 Portfolio | [sithijakalhara.com](https://sithijakalhara.com) |
-| 💼 LinkedIn | [Connect with me](https://www.linkedin.com/in/sithija-kalhara/) |
-| 🚀 Live Project | [eyerone.com](https://eyerone.com) |
+| 🌐 Portfolio | [sithijakalhara.com](https://www.sithijakalhara.com) |
+| 💼 LinkedIn | [Sithija Kalhara](https://www.linkedin.com/in/sithija-kalhara/) |
+| 📧 Email | [sithijakalhara2@gmail.com](mailto:sithijakalhara2@gmail.com) |
+| 🚀 Eyerone | [eyerone.com](https://eyerone.com) |
+| 🎮 YouTube | [@mrflexy1](https://www.youtube.com/@mrflexy1) |
 
 </div>
 
@@ -275,6 +211,6 @@ Jupyter Notebook         1 repo              ██░░░░░░░░░�
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:58A6FF,50:1a3a5c,100:0D1117&height=140&section=footer&text=OneDigital%20Vision%20for%20the%20Future&fontSize=18&fontColor=ffffff&fontAlignY=65&animation=fadeIn" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:58A6FF,50:1a3a5c,100:0D1117&height=140&section=footer&text=Sithija%20Kalhara%20%E2%80%94%20OneDigital%20Vision%20for%20the%20Future&fontSize=16&fontColor=ffffff&fontAlignY=65&animation=fadeIn" width="100%" />
 
 </div>
