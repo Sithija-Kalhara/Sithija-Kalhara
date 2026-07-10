@@ -266,7 +266,7 @@ Jupyter Notebook         1 repo              ██░░░░░░░░░�
 | Channel | Link |
 |--------|------|
 | 🌐 Portfolio | [sithijakalhara.com](https://sithijakalhara.com) |
-| 💼 LinkedIn | [Connect with me](https://www.linkedin.com) |
+| 💼 LinkedIn | [Connect with me](https://www.linkedin.com/in/sithija-kalhara/) |
 | 🚀 Live Project | [eyerone.com](https://eyerone.com) |
 
 </div>
