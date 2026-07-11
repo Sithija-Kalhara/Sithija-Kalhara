@@ -149,6 +149,84 @@ Python       ███████████████░░░░░░  75
 ## 📅 Weekly Dev Breakdown (WakaTime)
 
 <!--START_SECTION:waka-->
+![Code Time](http://img.shields.io/badge/Code%20Time-4%20hrs%2058%20mins-blue?style=flat)
+
+![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-50.47%20thousand%20lines%20of%20code-blue?style=flat)
+
+**🐱 My GitHub Data** 
+
+> 📦 220.9 kB Used in GitHub's Storage 
+ > 
+> 🏆 111 Contributions in the Year 2026
+ > 
+> 🚫 Not Opted to Hire
+ > 
+> 📜 12 Public Repositories 
+ > 
+> 🔑 2 Private Repositories 
+ > 
+**I'm an Early 🐤** 
+
+```text
+🌞 Morning                21 commits          █████░░░░░░░░░░░░░░░░░░░░   19.09 % 
+🌆 Daytime                54 commits          ████████████░░░░░░░░░░░░░   49.09 % 
+🌃 Evening                25 commits          ██████░░░░░░░░░░░░░░░░░░░   22.73 % 
+🌙 Night                  10 commits          ██░░░░░░░░░░░░░░░░░░░░░░░   09.09 % 
+```
+📅 **I'm Most Productive on Thursday** 
+
+```text
+Monday                   14 commits          ███░░░░░░░░░░░░░░░░░░░░░░   12.73 % 
+Tuesday                  11 commits          ██░░░░░░░░░░░░░░░░░░░░░░░   10.00 % 
+Wednesday                18 commits          ████░░░░░░░░░░░░░░░░░░░░░   16.36 % 
+Thursday                 49 commits          ███████████░░░░░░░░░░░░░░   44.55 % 
+Friday                   17 commits          ████░░░░░░░░░░░░░░░░░░░░░   15.45 % 
+Saturday                 0 commits           ░░░░░░░░░░░░░░░░░░░░░░░░░   00.00 % 
+Sunday                   1 commits           ░░░░░░░░░░░░░░░░░░░░░░░░░   00.91 % 
+```
+
+
+📊 **This Week I Spent My Time On** 
+
+```text
+🕑︎ Time Zone: Asia/Tokyo
+
+💬 Programming Languages: 
+JavaScript               1 hr 46 mins        ██████████████░░░░░░░░░░░   57.94 % 
+CSS                      1 hr 1 min          ████████░░░░░░░░░░░░░░░░░   33.55 % 
+TypeScript               12 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   06.72 % 
+Bash                     3 mins              ░░░░░░░░░░░░░░░░░░░░░░░░░   01.63 % 
+SQL                      0 secs              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.16 % 
+
+🔥 Editors: 
+VS Code                  3 hrs 4 mins        █████████████████████████   100.00 % 
+
+🐱‍💻 Projects: 
+eyerone                  2 hrs 52 mins       ███████████████████████░░   93.28 % 
+portfolio                12 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   06.72 % 
+
+💻 Operating System: 
+Windows                  3 hrs 4 mins        █████████████████████████   100.00 % 
+```
+
+**I Mostly Code in JavaScript** 
+
+```text
+JavaScript               5 repos             ██████████░░░░░░░░░░░░░░░   38.46 % 
+HTML                     2 repos             ████░░░░░░░░░░░░░░░░░░░░░   15.38 % 
+TypeScript               2 repos             ████░░░░░░░░░░░░░░░░░░░░░   15.38 % 
+CSS                      2 repos             ████░░░░░░░░░░░░░░░░░░░░░   15.38 % 
+Jupyter Notebook         1 repo              ██░░░░░░░░░░░░░░░░░░░░░░░   07.69 % 
+```
+
+
+
+**Timeline**
+
+![Lines of Code chart](https://raw.githubusercontent.com/Sithija-Kalhara/Sithija-Kalhara/main/assets/bar_graph.png)
+
+
+ Last Updated on 11/07/2026 01:42:49 UTC
 <!--END_SECTION:waka-->
 
 ---
