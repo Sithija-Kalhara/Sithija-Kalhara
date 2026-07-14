@@ -30,17 +30,40 @@ jobs:
           import requests
           import xml.etree.ElementTree as ET
           import re
+          import sys
 
           # Mr. Flexy Channel ID
           channel_id = "UCFK9phR6Au3AVhUw95n71fQ"
-          feed_url = f"https://www.youtube.com/feeds/videos.xml?channel_id={channel_id}"
+          
+          # YouTube direct feed එක block කරන නිසා proxy එකක් හරහා උත්සාහ කරමු
+          feed_urls = [
+              f"https://www.youtube.com/feeds/videos.xml?channel_id={channel_id}",
+              f"https://api.allorigins.win/raw?url=https://www.youtube.com/feeds/videos.xml?channel_id={channel_id}"
+          ]
 
-          response = requests.get(feed_url)
-          if response.status_code != 200:
-              print(f"❌ Cannot fetch RSS Feed! Status code: {response.status_code}")
-              exit(1)
+          response = None
+          for url in feed_urls:
+              try:
+                  print(f"Trying to fetch feed from: {url}")
+                  res = requests.get(url, headers={'User-Agent': 'Mozilla/5.0'}, timeout=10)
+                  if res.status_code == 200:
+                      response = res
+                      print("✅ Successfully fetched feed!")
+                      break
+                  else:
+                      print(f"⚠️ Failed with status code: {res.status_code}")
+              except Exception as e:
+                  print(f"⚠️ Error occurred: {e}")
 
-          root = ET.fromstring(response.content)
+          if response is None:
+              print("❌ All feed sources failed! Cannot fetch RSS Feed.")
+              sys.exit(1)
+
+          try:
+              root = ET.fromstring(response.content)
+          except Exception as e:
+              print(f"❌ Failed to parse XML: {e}")
+              sys.exit(1)
           
           # XML Namespaces
           namespaces = {
@@ -53,7 +76,7 @@ jobs:
           entry = root.find('atom:entry', namespaces)
           if entry is None:
               print("❌ No videos found in the feed!")
-              exit(1)
+              sys.exit(1)
 
           video_id = entry.find('yt:videoId', namespaces).text
           title = entry.find('atom:title', namespaces).text
