@@ -113,12 +113,14 @@ jobs:
           with open("README.md", "r", encoding="utf-8") as f:
               content = f.read()
 
-          # Replace in README
+          # 🌟 [BULLETPROOF UPDATE] Matches any spaces between comment markers
           pattern = r"()(.*?)()"
+          
+          # Rebuild tags dynamically using captured groups (\1 and \3) to preserve user's exact spacing style!
           replacement = f"\\1\n{card}\n\\3"
 
           if not re.search(pattern, content, flags=re.DOTALL):
-              print("❌ ERROR: Tags not found in README.md!")
+              print("❌ ERROR: Tags 'YOUTUBE_VIDEO_START' or 'YOUTUBE_VIDEO_END' not found in README.md!")
               sys.exit(1)
 
           new_content = re.sub(
