@@ -6,7 +6,7 @@ on:
   workflow_dispatch:        # Manual trigger
 
 permissions:
-  contents: write         # README file update access
+  contents: write         # README එක update කරලා push කරන්න
 
 jobs:
   update-readme:
@@ -35,10 +35,10 @@ jobs:
           # Mr. Flexy Channel ID
           channel_id = "UCFK9phR6Au3AVhUw95n71fQ"
           
-          # Replace 'UC' with 'UULF' to get standard video uploads ONLY (No Shorts/Reels)
-          playlist_id = "UULFK9phR6Au3AVhUw95n71fQ"
+          # Replace 'UC' with 'UU' to get standard video uploads ONLY (No Shorts/Reels)
+          playlist_id = "UUFK9phR6Au3AVhUw95n71fQ"
           
-          # Use playlist feeds instead of channel feeds
+          # Correct YouTube Playlist Feed URL
           feed_urls = [
               f"https://www.youtube.com/feeds/videos.xml?playlist_id={playlist_id}",
               f"https://api.allorigins.win/raw?url=https://www.youtube.com/feeds/videos.xml?playlist_id={playlist_id}"
