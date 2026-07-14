@@ -2,11 +2,11 @@ name: Update YouTube Latest Video
 
 on:
   schedule:
-    - cron: "0 6 * * *"   # Daily at 6AM UTC
-  workflow_dispatch:        # Manual trigger
+    - cron: "0 6 * * *"
+  workflow_dispatch:
 
 permissions:
-  contents: write         # README එක update කරලා push කරන්න
+  contents: write
 
 jobs:
   update-readme:
@@ -31,69 +31,71 @@ jobs:
           import xml.etree.ElementTree as ET
           import re
           import sys
+          import os
+
+          print("--- 🚀 DEBUG START ---")
+
+          # 1. Check README.md exists
+          if not os.path.exists("README.md"):
+              print("❌ ERROR: README.md does not exist in current directory!")
+              sys.exit(1)
+          else:
+              print("✅ Found README.md")
 
           # Mr. Flexy Channel ID
-          channel_id = "UCFK9phR6Au3AVhUw95n71fQ"
-          
-          # Replace 'UC' with 'UU' to get standard video uploads ONLY (No Shorts/Reels)
           playlist_id = "UUFK9phR6Au3AVhUw95n71fQ"
+          url = f"https://www.youtube.com/feeds/videos.xml?playlist_id={playlist_id}"
           
-          # Correct YouTube Playlist Feed URL
-          feed_urls = [
-              f"https://www.youtube.com/feeds/videos.xml?playlist_id={playlist_id}",
-              f"https://api.allorigins.win/raw?url=https://www.youtube.com/feeds/videos.xml?playlist_id={playlist_id}"
-          ]
+          print(f"🔗 Target Feed URL: {url}")
 
-          response = None
-          for url in feed_urls:
-              try:
-                  print(f"Trying to fetch feed from: {url}")
-                  res = requests.get(url, headers={'User-Agent': 'Mozilla/5.0'}, timeout=10)
-                  if res.status_code == 200:
-                      response = res
-                      print("✅ Successfully fetched feed!")
-                      break
-                  else:
-                      print(f"⚠️ Failed with status code: {res.status_code}")
-              except Exception as e:
-                  print(f"⚠️ Error occurred: {e}")
+          # 2. Fetch API Feed
+          try:
+              res = requests.get(url, headers={'User-Agent': 'Mozilla/5.0'}, timeout=15)
+              print(f"📡 HTTP Response Code: {res.status_code}")
+              if res.status_code != 200:
+                  print("❌ Error: Failed to fetch RSS feed.")
+                  sys.exit(1)
+              xml_data = res.content
+              print("✅ XML Feed Fetched Successfully!")
+          except Exception as e:
+              print(f"❌ Connection Error: {e}")
+              sys.exit(1)
 
-          if response is None:
-              print("❌ All feed sources failed! Cannot fetch RSS Feed.")
+          # 3. Parse XML
+          try:
+              root = ET.fromstring(xml_data)
+              print("✅ XML Parsed Successfully!")
+          except Exception as e:
+              print(f"❌ XML Parsing Failed: {e}")
+              sys.exit(1)
+
+          namespaces = {
+              'atom': 'http://www.w3.org/2005/Atom',
+              'yt': 'http://www.youtube.com/xml/schemas/2015'
+          }
+
+          # 4. Get Latest Video Details
+          entry = root.find('atom:entry', namespaces)
+          if entry is None:
+              print("❌ XML Error: No '<entry>' elements found in RSS!")
               sys.exit(1)
 
           try:
-              root = ET.fromstring(response.content)
+              video_id = entry.find('yt:videoId', namespaces).text
+              title = entry.find('atom:title', namespaces).text
+              date = entry.find('atom:published', namespaces).text[:10]
+              link = f"https://www.youtube.com/watch?v={video_id}"
+              print(f"🎥 Latest Video Title: {title}")
+              print(f"🆔 Video ID: {video_id}")
           except Exception as e:
-              print(f"❌ Failed to parse XML: {e}")
-              sys.exit(1)
-          
-          # XML Namespaces
-          namespaces = {
-              'atom': 'http://www.w3.org/2005/Atom',
-              'yt': 'http://www.youtube.com/xml/schemas/2015',
-              'media': 'http://search.yahoo.com/mrss/'
-          }
-
-          # Get the first entry (Latest Video)
-          entry = root.find('atom:entry', namespaces)
-          if entry is None:
-              print("❌ No videos found in the feed!")
+              print(f"❌ Error extracting video metadata: {e}")
               sys.exit(1)
 
-          video_id = entry.find('yt:videoId', namespaces).text
-          title = entry.find('atom:title', namespaces).text
-          date = entry.find('atom:published', namespaces).text[:10]
-          link = f"https://www.youtube.com/watch?v={video_id}"
-          
-          # Thumbnail Link
+          # Build Video Card
           thumb = f"https://img.youtube.com/vi/{video_id}/hqdefault.jpg"
-
-          # URL Encode title for shields.io badge
           clean_title = re.sub(r'[^a-zA-Z0-9 ]', '', title)[:30]
           badge_title = clean_title.replace(' ', '%20')
 
-          # Build Card Markdown
           card = f"""<div align="center">
             <a href="{link}" target="_blank">
               <img src="{thumb}" alt="{title}" width="480" style="border-radius:12px;" />
@@ -109,32 +111,34 @@ jobs:
             <sub>📅 Published: {date}</sub>
           </div>"""
 
-          # Read README
+          # 5. Read and Regex Match README
           with open("README.md", "r", encoding="utf-8") as f:
               content = f.read()
 
-          # 🌟 [BULLETPROOF UPDATE] Matches any spaces between comment markers
-          pattern = r"()(.*?)()"
-          
-          # Rebuild tags dynamically using captured groups (\1 and \3) to preserve user's exact spacing style!
-          replacement = f"\\1\n{card}\n\\3"
+          # Print README length to make sure it's not empty
+          print(f"📄 Readme length: {len(content)} characters.")
 
-          if not re.search(pattern, content, flags=re.DOTALL):
-              print("❌ ERROR: Tags 'YOUTUBE_VIDEO_START' or 'YOUTUBE_VIDEO_END' not found in README.md!")
+          # Regex pattern matching tags with any spacing
+          pattern = r"(<!--\s*YOUTUBE_VIDEO_START\s*-->)(.*?)(<!--\s*YOUTUBE_VIDEO_END\s*-->)"
+          
+          match = re.search(pattern, content, flags=re.DOTALL)
+          if match:
+              print("✅ Tags FOUND in README!")
+              print(f"🔍 Current Content inside tags: {repr(match.group(2))}")
+          else:
+              print("❌ ERROR: Tags 'YOUTUBE_VIDEO_START' or 'YOUTUBE_VIDEO_END' NOT FOUND in README.md!")
+              print("Please make sure you have <!-- YOUTUBE_VIDEO_START --> and <!-- YOUTUBE_VIDEO_END --> in README.md")
               sys.exit(1)
 
-          new_content = re.sub(
-              pattern,
-              replacement,
-              content,
-              flags=re.DOTALL,
-          )
+          replacement = f"\\1\n{card}\n\\3"
+          new_content = re.sub(pattern, replacement, content, flags=re.DOTALL)
 
-          # Write README
+          # 6. Write Back to README
           with open("README.md", "w", encoding="utf-8") as f:
               f.write(new_content)
+          print("💾 README.md overwritten successfully with updated video.")
 
-          print(f"✅ README successfully updated with standard video: {title}")
+          print("--- 🏁 DEBUG END ---")
           EOF
 
       - name: Commit & push changes
@@ -142,5 +146,11 @@ jobs:
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add README.md
-          git diff --staged --quiet || git commit -m "🎬 chore: update latest standard YouTube video"
-          git push
+          # Check if there are changes to commit
+          if git diff --staged --quiet; then
+            echo "ℹ️ No changes detected in README.md. Nothing to commit."
+          else
+            git commit -m "🎬 chore: update latest standard YouTube video"
+            git push
+            echo "🚀 Successfully pushed changes to repository!"
+          fi
