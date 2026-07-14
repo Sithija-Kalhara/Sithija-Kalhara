@@ -290,4 +290,3 @@ Jupyter Notebook         1 repo              ██░░░░░�
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:58A6FF,50:1a3a5c,100:0D1117&height=140&section=footer&text=Sithija%20Kalhara%20%E2%80%94%20OneDigital%20Vision%20for%20the%20Future&fontSize=16&fontColor=ffffff&fontAlignY=65&animation=fadeIn" width="100%" />
 
 </div>
-mekeda
