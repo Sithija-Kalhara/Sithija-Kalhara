@@ -32,7 +32,7 @@ jobs:
           import re
 
           # Mr. Flexy Channel ID
-          channel_id = "UCFK9phR6Au3AVhUw95n71fQW"
+          channel_id = "UCFK9phR6Au3AVhUw95n71fQ"
           feed_url = f"https://www.youtube.com/feeds/videos.xml?channel_id={channel_id}"
 
           response = requests.get(feed_url)
