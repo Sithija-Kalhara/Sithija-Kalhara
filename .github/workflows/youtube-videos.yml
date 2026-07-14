@@ -6,7 +6,7 @@ on:
   workflow_dispatch:        # Manual trigger
 
 permissions:
-  contents: write         # README එක update කරලා push කරන්න
+  contents: write         # README file update access
 
 jobs:
   update-readme:
@@ -35,10 +35,13 @@ jobs:
           # Mr. Flexy Channel ID
           channel_id = "UCFK9phR6Au3AVhUw95n71fQ"
           
-          # YouTube direct feed එක block කරන නිසා proxy එකක් හරහා උත්සාහ කරමු
+          # Replace 'UC' with 'UULF' to get standard video uploads ONLY (No Shorts/Reels)
+          playlist_id = "UULFK9phR6Au3AVhUw95n71fQ"
+          
+          # Use playlist feeds instead of channel feeds
           feed_urls = [
-              f"https://www.youtube.com/feeds/videos.xml?channel_id={channel_id}",
-              f"https://api.allorigins.win/raw?url=https://www.youtube.com/feeds/videos.xml?channel_id={channel_id}"
+              f"https://www.youtube.com/feeds/videos.xml?playlist_id={playlist_id}",
+              f"https://api.allorigins.win/raw?url=https://www.youtube.com/feeds/videos.xml?playlist_id={playlist_id}"
           ]
 
           response = None
@@ -110,12 +113,12 @@ jobs:
           with open("README.md", "r", encoding="utf-8") as f:
               content = f.read()
 
-          # ⚠️ හරියටම tags දෙක මැදට විතරක් ලියන Regex එක (FIXED)
-          pattern = r"(<!-- YOUTUBE_VIDEO_START -->)(.*?)(<!-- YOUTUBE_VIDEO_END -->)"
+          # Replace in README
+          pattern = r"()(.*?)()"
           replacement = f"\\1\n{card}\n\\3"
 
           if not re.search(pattern, content, flags=re.DOTALL):
-              print("❌ ERROR: Tags '<!-- YOUTUBE_VIDEO_START -->' or '<!-- YOUTUBE_VIDEO_END -->' not found in README.md!")
+              print("❌ ERROR: Tags not found in README.md!")
               sys.exit(1)
 
           new_content = re.sub(
@@ -129,7 +132,7 @@ jobs:
           with open("README.md", "w", encoding="utf-8") as f:
               f.write(new_content)
 
-          print(f"✅ README successfully updated with video: {title}")
+          print(f"✅ README successfully updated with standard video: {title}")
           EOF
 
       - name: Commit & push changes
@@ -137,5 +140,5 @@ jobs:
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add README.md
-          git diff --staged --quiet || git commit -m "🎬 chore: update latest YouTube video"
+          git diff --staged --quiet || git commit -m "🎬 chore: update latest standard YouTube video"
           git push
