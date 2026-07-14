@@ -97,25 +97,35 @@ jobs:
             </a>
             <br/>
             <br/>
+            <br/>
             <a href="{link}" target="_blank">
               <img src="https://img.shields.io/badge/▶ Watch Now-{badge_title}-FF0000?style=for-the-badge&logo=youtube&logoColor=white" />
             </a>
             <br/>
+            <br/>
             <sub>📅 Published: {date}</sub>
-          </div>
-          """
+          </div>"""
 
-          # Read and Update README
+          # Read README
           with open("README.md", "r", encoding="utf-8") as f:
               content = f.read()
 
+          # ⚠️ හරියටම tags දෙක මැදට විතරක් ලියන Regex එක (FIXED)
+          pattern = r"(<!-- YOUTUBE_VIDEO_START -->)(.*?)(<!-- YOUTUBE_VIDEO_END -->)"
+          replacement = f"\\1\n{card}\n\\3"
+
+          if not re.search(pattern, content, flags=re.DOTALL):
+              print("❌ ERROR: Tags '<!-- YOUTUBE_VIDEO_START -->' or '<!-- YOUTUBE_VIDEO_END -->' not found in README.md!")
+              sys.exit(1)
+
           new_content = re.sub(
-              r".*?",
-              card,
+              pattern,
+              replacement,
               content,
               flags=re.DOTALL,
           )
 
+          # Write README
           with open("README.md", "w", encoding="utf-8") as f:
               f.write(new_content)
 
