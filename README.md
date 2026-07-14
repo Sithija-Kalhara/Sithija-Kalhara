@@ -269,6 +269,13 @@ Jupyter Notebook         1 repo              ██░░░░░�
 
 ---
 
+## 🎬 Latest YouTube Video
+
+<!-- YOUTUBE_VIDEO_START -->
+<!-- YOUTUBE_VIDEO_END -->
+
+---
+
 ## 📫 Get In Touch
 
 <div align="center">
