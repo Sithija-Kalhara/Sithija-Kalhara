@@ -190,18 +190,18 @@ Python       ███████████████░░░░░░
 
 <!-- YOUTUBE_VIDEO_START -->
 <div align="center">
-  <a href="https://www.youtube.com/watch?v=wLf_QQW12i0" target="_blank">
-    <img src="https://img.youtube.com/vi/wLf_QQW12i0/hqdefault.jpg" alt="Never Understand  #nfs #mrflexy #mostwanted" width="480" style="border-radius:12px;" />
+  <a href="https://www.youtube.com/watch?v=mnAt_PwOQdk" target="_blank">
+    <img src="https://img.youtube.com/vi/mnAt_PwOQdk/hqdefault.jpg" alt="It's just a game #mrflexy #game #cars" width="480" style="border-radius:12px;" />
   </a>
   <br/>
   <br/>
   <br/>
-  <a href="https://www.youtube.com/watch?v=wLf_QQW12i0" target="_blank">
-    <img src="https://img.shields.io/badge/▶ Watch Now-Never%20Understand%20%20nfs%20mrflexy%20-FF0000?style=for-the-badge&logo=youtube&logoColor=white" />
+  <a href="https://www.youtube.com/watch?v=mnAt_PwOQdk" target="_blank">
+    <img src="https://img.shields.io/badge/▶ Watch Now-Its%20just%20a%20game%20mrflexy%20game%20c-FF0000?style=for-the-badge&logo=youtube&logoColor=white" />
   </a>
   <br/>
   <br/>
-  <sub>📅 Published: 2026-07-14</sub>
+  <sub>📅 Published: 2026-07-15</sub>
 </div>
 <!-- YOUTUBE_VIDEO_END -->
 
