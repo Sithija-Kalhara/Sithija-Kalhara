@@ -139,7 +139,7 @@ Python       ███████████████░░░░░░
 </div>
 
 <div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Sithija-Kalhara&bg_color=0D1117&color=58A6FF&line=58A6FF&point=ffffff&area=true&hide_border=true" width="100%" />
+  <img src="https://raw.githubusercontent.com/Sithija-Kalhara/Sithija-Kalhara/main/profile/streak-stats.svg" height="180" />
 </div>
 
 ---
