@@ -1,0 +1,27 @@
+name: Update Repo Badge
+on:
+  schedule:
+    - cron: '0 0 * * *'  # දිනකට වරක්
+  workflow_dispatch:
+
+jobs:
+  update-badge:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Get repo count
+        run: |
+          REPO_COUNT=$(curl -H "Authorization: token ${{ secrets.MY_TOKEN }}" \
+            https://api.github.com/users/Sithija-Kalhara | jq '.public_repos')
+          echo "REPO_COUNT=$REPO_COUNT" >> $GITHUB_ENV
+      - name: Create badge
+        run: |
+          curl -o badge.svg \
+            "https://img.shields.io/badge/Public%20Repos-${{ env.REPO_COUNT }}-58A6FF?style=for-the-badge&logo=github"
+      - name: Commit badge
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add badge.svg
+          git commit -m "Update repo badge" || echo "No changes"
+          git push
