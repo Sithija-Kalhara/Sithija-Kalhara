@@ -11,20 +11,27 @@
 <br/>
 
 <!-- Badges Row -->
-<a href="https://www.sithijakalhara.com" target="_blank">
-  <img src="https://img.shields.io/badge/Portfolio-sithijakalhara.com-000000?style=for-the-badge&logo=google-chrome&logoColor=58A6FF" />
-</a>
-<a href="https://www.linkedin.com/in/sithija-kalhara/" target="_blank">
-  <img src="https://img.shields.io/badge/LinkedIn-Sithija%20Kalhara-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
-</a>
-<a href="https://eyerone.com" target="_blank">
-  <img src="https://img.shields.io/badge/Eyerone-Live%20Project-58A6FF?style=for-the-badge&logo=vercel&logoColor=white" />
-</a>
-<a href="https://www.youtube.com/@mrflexy1" target="_blank">
-  <img src="https://img.shields.io/badge/YouTube-Mr.%20Flexy-FF0000?style=for-the-badge&logo=youtube&logoColor=white" />
-</a>
-<img src="https://komarev.com/ghpvc/?username=Sithija-Kalhara&style=for-the-badge&color=58A6FF&label=PROFILE+VIEWS" />
+<div align="center">
 
+<a href="https://www.sithijakalhara.com" target="_blank">
+  <img src="https://img.shields.io/badge/Portfolio-sithijakalhara.com-000000?style=flat&logo=google-chrome&logoColor=58A6FF" />
+</a>
+&nbsp;
+<a href="https://www.linkedin.com/in/sithija-kalhara/" target="_blank">
+  <img src="https://img.shields.io/badge/LinkedIn-Sithija%20Kalhara-0077B5?style=flat&logo=linkedin&logoColor=white" />
+</a>
+&nbsp;
+<a href="https://eyerone.com" target="_blank">
+  <img src="https://img.shields.io/badge/Eyerone-Live%20Project-58A6FF?style=flat&logo=vercel&logoColor=white" />
+</a>
+&nbsp;
+<a href="https://www.youtube.com/@mrflexy1" target="_blank">
+  <img src="https://img.shields.io/badge/YouTube-Mr.%20Flexy-FF0000?style=flat&logo=youtube&logoColor=white" />
+</a>
+&nbsp;
+<img src="https://komarev.com/ghpvc/?username=Sithija-Kalhara&style=flat&color=58A6FF&label=PROFILE+VIEWS" />
+
+</div>
 <br/><br/>
 
 <!-- Snake Contribution Animation -->
@@ -80,29 +87,27 @@ const sithijaKalhara = {
 <div align="center">
 
 ### 🌐 Frontend
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![Three.js](https://img.shields.io/badge/Three.js-000000?style=for-the-badge&logo=threedotjs&logoColor=white)
-![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat&logo=nextdotjs&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat&logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-38B2AC?style=flat&logo=tailwind-css&logoColor=white)
+![Three.js](https://img.shields.io/badge/Three.js-000000?style=flat&logo=threedotjs&logoColor=white)
+![Figma](https://img.shields.io/badge/Figma-F24E1E?style=flat&logo=figma&logoColor=white)
 
 ### 🔧 Backend & Database
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
-![Express](https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=nodedotjs&logoColor=white)
+![Express](https://img.shields.io/badge/Express-000000?style=flat&logo=express&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat&logo=mongodb&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 
 ### ☁️ Infrastructure & AI
-![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge&logo=cloudflare&logoColor=white)
-![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white)
-![Anthropic](https://img.shields.io/badge/Anthropic%20Claude-CC785C?style=for-the-badge&logo=anthropic&logoColor=white)
-![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=flat&logo=cloudflare&logoColor=white)
+![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat&logo=openai&logoColor=white)
+![Anthropic](https://img.shields.io/badge/Anthropic%20Claude-CC785C?style=flat&logo=anthropic&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat&logo=vercel&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
 
-</div>
-
----
+</div>---
 
 ## 📈 Skills Proficiency
 
@@ -120,14 +125,14 @@ const sithijaKalhara = {
 </div>
 
 ```
-Next.js      ████████████████████░  98%
-React        ███████████████████░░  95%
-TypeScript   ██████████████████░░░  88%
-UI / UX      ██████████████████░░░  90%
-Node.js      █████████████████░░░░  85%
-AI / ML      ████████████████░░░░░  80%
-Cloudflare   █████████████████░░░░  82%
-Python       ███████████████░░░░░░  75%
+Next.js      ████████████████████░  98%
+React        ███████████████████░░  95%
+UI / UX      ██████████████████░░░  90%
+TypeScript   ██████████████████░░░  88%
+Node.js      █████████████████░░░░  85%
+Cloudflare   █████████████████░░░░  82%
+AI / ML      ████████████████░░░░░  80%
+Python       ███████████████░░░░░░  75%
 ```
 
 ---
@@ -148,15 +153,15 @@ Python       ███████████████░░░░░░
 
 <div align="center">
 
-[![Commits](https://img.shields.io/github/commit-activity/y/Sithija-Kalhara/Sithija-Kalhara?style=plastic&color=58A6FF&label=Commits+This+Year&logo=github)](https://github.com/Sithija-Kalhara/Sithija-Kalhara/commits/main)
+[![Commits](https://img.shields.io/github/commit-activity/y/Sithija-Kalhara/Sithija-Kalhara?style=flat&color=58A6FF&label=Commits+This+Year&logo=github)](https://github.com/Sithija-Kalhara/Sithija-Kalhara/commits/main)
 &nbsp;
-[![Followers](https://img.shields.io/github/followers/Sithija-Kalhara?style=plastic&color=58A6FF&label=Followers&logo=github)](https://github.com/Sithija-Kalhara?tab=followers)
+[![Followers](https://img.shields.io/github/followers/Sithija-Kalhara?style=flat&color=58A6FF&label=Followers&logo=github)](https://github.com/Sithija-Kalhara?tab=followers)
 &nbsp;
-[![Stars](https://img.shields.io/github/stars/Sithija-Kalhara?style=plastic&color=58A6FF&label=Stars&logo=github&affiliations=OWNER)](https://github.com/Sithija-Kalhara?tab=stars)
+[![Stars](https://img.shields.io/github/stars/Sithija-Kalhara?style=flat&color=58A6FF&label=Stars&logo=github&affiliations=OWNER)](https://github.com/Sithija-Kalhara?tab=stars)
 &nbsp;
-[![Repos](https://img.shields.io/badge/Public%20Repos-10-58A6FF?style=plastic&logo=github)](https://github.com/Sithija-Kalhara?tab=repositories)
-</div>
+[![Repos](https://img.shields.io/badge/Public%20Repos-10-58A6FF?style=flat&logo=github)](https://github.com/Sithija-Kalhara?tab=repositories)
 
+</div>
 ---
 
 ## 🎮 Gaming & Content — Mr. Flexy
@@ -175,9 +180,9 @@ Python       ███████████████░░░░░░
 > *Sithija Kalhara | Cinematic gaming content & live streams — where code meets culture.*
 > Blending technical storytelling with creative direction. 🎬🕹️
 
-[![YouTube](https://img.shields.io/badge/YouTube-@mrflexy1-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@mrflexy1)
-[![TikTok](https://img.shields.io/badge/TikTok-@mr._.flexy-000000?style=for-the-badge&logo=tiktok&logoColor=white)](https://www.tiktok.com/@mr._.flexy)
-[![Facebook](https://img.shields.io/badge/Facebook-mrflexy2-1877F2?style=for-the-badge&logo=facebook&logoColor=white)](https://www.facebook.com/mrflexy2/)
+[![YouTube](https://img.shields.io/badge/YouTube-@mrflexy1-FF0000?style=flat&logo=youtube&logoColor=white)](https://www.youtube.com/@mrflexy1)
+[![TikTok](https://img.shields.io/badge/TikTok-@mr._.flexy-000000?style=flat&logo=tiktok&logoColor=white)](https://www.tiktok.com/@mr._.flexy)
+[![Facebook](https://img.shields.io/badge/Facebook-mrflexy2-1877F2?style=flat&logo=facebook&logoColor=white)](https://www.facebook.com/mrflexy2/)
 
 </div>
 
@@ -196,7 +201,7 @@ Python       ███████████████░░░░░░
   <br/>
   <br/>
   <a href="https://www.youtube.com/watch?v=mnAt_PwOQdk" target="_blank">
-    <img src="https://img.shields.io/badge/▶ Watch Now-Its%20just%20a%20game%20mrflexy%20game%20c-FF0000?style=for-the-badge&logo=youtube&logoColor=white" />
+    <img src="https://img.shields.io/badge/▶ Watch Now-Its%20just%20a%20game%20mrflexy%20game%20c-FF0000?style=flat&logo=youtube&logoColor=white" />
   </a>
   <br/>
   <br/>
@@ -208,13 +213,11 @@ Python       ███████████████░░░░░░
 
 <div align="center">
 
-| Channel | Link |
-|--------|------|
-| 🌐 Portfolio | [sithijakalhara.com](https://www.sithijakalhara.com) |
-| 💼 LinkedIn | [Sithija Kalhara](https://www.linkedin.com/in/sithija-kalhara/) |
-| 📧 Email | [sithijakalhara2@gmail.com](mailto:sithijakalhara2@gmail.com) |
-| 🚀 Eyerone | [eyerone.com](https://eyerone.com) |
-| 🎮 YouTube | [@mrflexy1](https://www.youtube.com/@mrflexy1) |
+[![Portfolio](https://img.shields.io/badge/🌐%20Portfolio-sithijakalhara.com-000000?style=flat&logo=google-chrome&logoColor=58A6FF)](https://www.sithijakalhara.com)
+[![LinkedIn](https://img.shields.io/badge/💼%20LinkedIn-Sithija%20Kalhara-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sithija-kalhara/)
+[![Email](https://img.shields.io/badge/📧%20Email-sithijakalhara2@gmail.com-D14836?style=flat&logo=gmail&logoColor=white)](mailto:sithijakalhara2@gmail.com)
+[![Eyerone](https://img.shields.io/badge/🚀%20Eyerone-eyerone.com-58A6FF?style=flat&logo=vercel&logoColor=white)](https://eyerone.com)
+[![YouTube](https://img.shields.io/badge/🎮%20YouTube-@mrflexy1-FF0000?style=flat&logo=youtube&logoColor=white)](https://www.youtube.com/@mrflexy1)
 
 </div>
 
