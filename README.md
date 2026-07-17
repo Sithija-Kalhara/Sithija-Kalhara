@@ -148,14 +148,13 @@ Python       ███████████████░░░░░░
 
 <div align="center">
 
-![Commits](https://img.shields.io/github/commit-activity/y/Sithija-Kalhara/Sithija-Kalhara?style=for-the-badge&color=58A6FF&label=Commits+This+Year&logo=github)
+[![Commits](https://img.shields.io/github/commit-activity/y/Sithija-Kalhara/Sithija-Kalhara?style=plastic&color=58A6FF&label=Commits+This+Year&logo=github)](https://github.com/Sithija-Kalhara/Sithija-Kalhara/commits/main)
 &nbsp;
-![Followers](https://img.shields.io/github/followers/Sithija-Kalhara?style=for-the-badge&color=58A6FF&label=Followers&logo=github)
+[![Followers](https://img.shields.io/github/followers/Sithija-Kalhara?style=plastic&color=58A6FF&label=Followers&logo=github)](https://github.com/Sithija-Kalhara?tab=followers)
 &nbsp;
-![Stars](https://img.shields.io/github/stars/Sithija-Kalhara?style=for-the-badge&color=58A6FF&label=Stars&logo=github&affiliations=OWNER)
+[![Stars](https://img.shields.io/github/stars/Sithija-Kalhara?style=plastic&color=58A6FF&label=Stars&logo=github&affiliations=OWNER)](https://github.com/Sithija-Kalhara?tab=stars)
 &nbsp;
-![Public Repos](badge.svg)
-
+[![Repos](https://img.shields.io/badge/Public%20Repos-10-58A6FF?style=plastic&logo=github)](https://github.com/Sithija-Kalhara?tab=repositories)
 </div>
 
 ---
