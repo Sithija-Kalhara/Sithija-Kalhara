@@ -135,11 +135,11 @@ Python       ███████████████░░░░░░
 ## 📊 GitHub Stats
 
 <div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com?user=Sithija-Kalhara&theme=dark&hide_border=true&background=0D1117&stroke=58A6FF&ring=58A6FF&fire=FF6B6B&currStreakLabel=58A6FF" height="180" />
+  <img src="https://raw.githubusercontent.com/Sithija-Kalhara/Sithija-Kalhara/main/profile/streak-stats.svg" height="180" />
 </div>
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/Sithija-Kalhara/Sithija-Kalhara/main/profile/streak-stats.svg" height="180" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Sithija-Kalhara&bg_color=0D1117&color=58A6FF&line=58A6FF&point=ffffff&area=true&hide_border=true" width="100%" />
 </div>
 
 ---
