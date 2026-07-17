@@ -154,7 +154,7 @@ Python       ███████████████░░░░░░
 &nbsp;
 ![Stars](https://img.shields.io/github/stars/Sithija-Kalhara?style=for-the-badge&color=58A6FF&label=Stars&logo=github&affiliations=OWNER)
 &nbsp;
-![Repos](https://img.shields.io/badge/dynamic/json?url=https://api.github.com/users/Sithija-Kalhara&query=$.public_repos&style=for-the-badge&color=58A6FF&label=Public+Repos&logo=github)
+![Public Repos](badge.svg)
 
 </div>
 
