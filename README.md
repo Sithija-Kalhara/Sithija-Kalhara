@@ -107,7 +107,8 @@ const sithijaKalhara = {
 ![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat&logo=vercel&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
 
-</div>---
+</div>
+---
 
 ## 📈 Skills Proficiency
 
