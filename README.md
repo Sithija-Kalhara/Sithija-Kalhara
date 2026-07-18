@@ -203,7 +203,7 @@ Python       ███████████████░░░░░░  75
   <br/>
   <br/>
   <a href="https://www.youtube.com/watch?v=mnAt_PwOQdk" target="_blank">
-    <img src="https://img.shields.io/badge/▶ Watch Now-Its%20just%20a%20game%20mrflexy%20game%20c-FF0000?style=flat&logo=youtube&logoColor=white" />
+    <img src="https://img.shields.io/badge/▶ Watch Now-Its%20just%20a%20game%20mrflexy%20game%20c-FF0000?style=for-the-badge&logo=youtube&logoColor=white" />
   </a>
   <br/>
   <br/>
