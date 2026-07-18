@@ -81,6 +81,7 @@ const sithijaKalhara = {
 </div>
 
 ---
+---
 
 ## 💻 Tech Stack
 
@@ -108,7 +109,7 @@ const sithijaKalhara = {
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
 
 </div>
----
+
 
 ## 📈 Skills Proficiency
 
@@ -126,6 +127,7 @@ const sithijaKalhara = {
 </div>
 
 ```
+
 Next.js      ████████████████████░  98%
 React        ███████████████████░░  95%
 UI / UX      ██████████████████░░░  90%
@@ -136,7 +138,6 @@ AI / ML      ████████████████░░░░░  80
 Python       ███████████████░░░░░░  75%
 ```
 
----
 
 ## 📊 GitHub Stats
 
