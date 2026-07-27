@@ -21,7 +21,7 @@ jobs:
       - name: Generate streak stats
         uses: DenverCoder1/github-readme-streak-stats@main
         with:
-          options: user=Sithija-Kalhara&theme=dark&hide_border=true&background=0D1117&stroke=58A6FF&ring=58A6FF&fire=FF6B6B&currStreakLabelColor=58A6FF
+          options: user=Sithija-Kalhara&theme=dark&hide_border=true&background=0D1117&stroke=58A6FF&ring=58A6FF&fire=FF6B6B&currStreakLabelColor=58A6FF&cache_seconds=1800
           path: profile/streak-stats.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
