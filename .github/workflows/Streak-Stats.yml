@@ -2,7 +2,9 @@ name: Update Streak Stats
 
 on:
   schedule:
-    - cron: "0 18 * * *"   # Runs daily at 03:00 JST (18:00 UTC previous day)
+    - cron: "1 15 * * *"   # JST 00:01 (midnight)
+    - cron: "0 23 * * *"   # JST 08:00 (morning)
+    - cron: "0 7 * * *"    # JST 16:00 (afternoon)
   push:
     paths:
       - ".github/workflows/streak-stats.yml"
