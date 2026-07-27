@@ -196,18 +196,18 @@ Python       ███████████████░░░░░░  75
 
 <!-- YOUTUBE_VIDEO_START -->
 <div align="center">
-  <a href="https://www.youtube.com/watch?v=fEdgnUeqgx8" target="_blank">
-    <img src="https://img.youtube.com/vi/fEdgnUeqgx8/hqdefault.jpg" alt="When life gets heavy, I press the Game start button 🎮❤️ #mrflexy #boylife #games #ps5 #pc" width="480" style="border-radius:12px;" />
+  <a href="https://www.youtube.com/watch?v=D3jFen65-g0" target="_blank">
+    <img src="https://img.youtube.com/vi/D3jFen65-g0/hqdefault.jpg" alt="Life stable 🧑🏻‍💻 softwareengineer #liveops #dualsurvival #justsurvive #mrflexy" width="480" style="border-radius:12px;" />
   </a>
   <br/>
   <br/>
   <br/>
-  <a href="https://www.youtube.com/watch?v=fEdgnUeqgx8" target="_blank">
-    <img src="https://img.shields.io/badge/▶ Watch Now-When%20life%20gets%20heavy%20I%20press%20t-FF0000?style=for-the-badge&logo=youtube&logoColor=white" />
+  <a href="https://www.youtube.com/watch?v=D3jFen65-g0" target="_blank">
+    <img src="https://img.shields.io/badge/▶ Watch Now-Life%20stable%20%20softwareengineer%20-FF0000?style=for-the-badge&logo=youtube&logoColor=white" />
   </a>
   <br/>
   <br/>
-  <sub>📅 Published: 2026-07-24</sub>
+  <sub>📅 Published: 2026-07-27</sub>
 </div>
 <!-- YOUTUBE_VIDEO_END -->
 
